@@ -1,12 +1,17 @@
-header {
-	background-color: #454545;
-	color: #F9F6EE;
-)
-
-h1 {
-	color: purple;
+body, *, *:before, *:after {
+    box-sizing: border-box;
 }
 
 body {
 	background-color: #E4E0D8;
 )
+
+h1 {
+	color: purple;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+
+.page-header {
+	background-color: #454545;
+}

@@ -6,12 +6,46 @@ body {
 	background-color: #E4E0D8;
 }
 
+.fixed-width {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*=================================
+Header
+=================================*/
+
 h1 {
-	color: purple;
-	font-family: sans-serif;
+	color: #F9F6EE;
+	font-family: "Outfit", sans-serif;
 	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+	position: center;
+	display: inline-block;
 }
 
 .page-header {
 	background-color: #454545;
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+.logo {
+	float: left;
+	padding-right: 2rem;
+	display: block;
+}
+
+.page-header nav {
+	float: right;
+	text-transform: uppercase;
+}
+
+.page-header nav li {
+	/*float: left;*/
+	margin-right: 3rem;
+	padding-bottom: 3rem;
+	display: inline-block;
+	color: #F9F6EE;
 }

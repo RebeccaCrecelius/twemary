@@ -35,6 +35,16 @@ a:active {
     margin: 0 auto;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
 /*=================================
 Header
 =================================*/
@@ -52,8 +62,8 @@ h1 {
 
 .page-header {
 	background-color: #454545;
-	padding-top: 1.75rem;
-	padding-bottom: 2.75em;
+	padding-top: 2rem;
+	padding-bottom: .5em;
 }
 
 .logo {
@@ -94,6 +104,7 @@ h2 {
 	padding-left: 15.25em;
 }
 
+
 /*===================================
 Footer
 ===================================*/
@@ -103,18 +114,20 @@ footer {
 
 
 footer li {
+	float: left;
 	margin-right: 3rem;
-	padding-bottom: 3rem;
-	display: inline-block;
-	color: #F9F6EE;
 	padding-top: 3rem;
+	padding-bottom: 3rem;
+	display: block;
+	color: #F9F6EE;
+	background-color: #454545;
 }
 
 footer p {
-	display: block;
-	margin-right: 3rem;
-	padding-bottom: 3rem;
-	display: inline-block;
-	color: #F9F6EE;
+	float: right;
+	margin-right: 5rem;
 	padding-top: 3rem;
+	padding-bottom: 3rem;
+	color: #F9F6EE;
+	background-color: #454545;
 }

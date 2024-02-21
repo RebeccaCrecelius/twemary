@@ -1,21 +1,29 @@
-body, *, *:before, *:after {
-    box-sizing: border-box;
+body,
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
 }
 
 body {
 	background-color: #E4E0D8;
 }
 
+
 a {
-    color: inherit;
-    font-weight: bold;
-    text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 a:hover {
 	color: #CCA3DC;
-	font-weight: bold;    
+	font-weight: bold;
 	text-decoration: none;
+}
+
+.container {
+	border: 1px solid #000000;
 }
 
 /*a:visited {
@@ -26,24 +34,31 @@ a:hover {
 
 a:active {
 	color: #B7C18F;
-	font-weight: bold;    
+	font-weight: bold;
 	text-decoration: none;
 }
 
+p {
+	border: 1px solid #000000;
+	padding: 10px;
+	margin: 10px;
+	width: 30%;
+}
+
 .fixed-width {
-    width: 940px;
-    margin: 0 auto;
+	width: 940px;
+	margin: 0 auto;
 }
 
 .clearfix:before,
 .clearfix:after {
-    content: "";
-    display: table;
-  }
+	content: "";
+	display: table;
+}
 
-  .clearfix:after {
-    clear: both;
-  }
+.clearfix:after {
+	clear: both;
+}
 
 /*=================================
 Header
@@ -104,12 +119,25 @@ h2 {
 	padding-left: 15.25em;
 }
 
+/*====================================
+Body
+====================================*/
+.feature {
+	float: left;
+}
+
+
+
 
 /*===================================
 Footer
 ===================================*/
 footer {
 	background-color: #454545;
+}
+
+.copyright {
+	border: none;
 }
 
 

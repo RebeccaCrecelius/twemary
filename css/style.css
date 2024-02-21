@@ -1,8 +1,5 @@
-body,
-*,
-*:before,
-*:after {
-	box-sizing: border-box;
+body, *, *:before, *:after {
+    box-sizing: border-box;
 }
 
 body {
@@ -11,14 +8,14 @@ body {
 
 
 a {
-	color: inherit;
-	font-weight: bold;
-	text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover {
 	color: #CCA3DC;
-	font-weight: bold;
+	font-weight: bold;    
 	text-decoration: none;
 }
 
@@ -34,31 +31,31 @@ a:hover {
 
 a:active {
 	color: #B7C18F;
-	font-weight: bold;
+	font-weight: bold;    
 	text-decoration: none;
 }
 
 p {
 	border: 1px solid #000000;
 	padding: 10px;
-	margin: 10px;
+	margin: 10px;	
 	width: 30%;
 }
 
 .fixed-width {
-	width: 940px;
-	margin: 0 auto;
+    width: 940px;
+    margin: 0 auto;
 }
 
 .clearfix:before,
 .clearfix:after {
-	content: "";
-	display: table;
-}
+    content: "";
+    display: table;
+  }
 
-.clearfix:after {
-	clear: both;
-}
+  .clearfix:after {
+    clear: both;
+  }
 
 /*=================================
 Header
@@ -124,10 +121,8 @@ Body
 ====================================*/
 .feature {
 	float: left;
+	padding-left: 15.25em;
 }
-
-
-
 
 /*===================================
 Footer

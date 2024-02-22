@@ -1,21 +1,23 @@
-body, *, *:before, *:after {
-    box-sizing: border-box;
+body,
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
 }
 
 body {
 	background-color: #E4E0D8;
 }
 
-
 a {
-    color: inherit;
-    font-weight: bold;
-    text-decoration: none;
+	color: inherit;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 a:hover {
 	color: #CCA3DC;
-	font-weight: bold;    
+	font-weight: bold;
 	text-decoration: none;
 }
 
@@ -31,31 +33,31 @@ a:hover {
 
 a:active {
 	color: #B7C18F;
-	font-weight: bold;    
+	font-weight: bold;
 	text-decoration: none;
 }
 
 p {
 	border: 1px solid #000000;
 	padding: 10px;
-	margin: 10px;	
+	margin: 10px;
 	width: 30%;
 }
 
 .fixed-width {
-    width: 940px;
-    margin: 0 auto;
+	width: 940px;
+	margin: 0 auto;
 }
 
 .clearfix:before,
 .clearfix:after {
-    content: "";
-    display: table;
-  }
+	content: "";
+	display: table;
+}
 
-  .clearfix:after {
-    clear: both;
-  }
+.clearfix:after {
+	clear: both;
+}
 
 /*=================================
 Header
@@ -102,6 +104,20 @@ h1 {
 Section 1
 ===================================*/
 
+/*.hero {
+	padding-left: 15.25em;
+}*/
+
+.hero {
+	width: 100%;
+	height: 50%;
+}
+
+.hero img {
+	width: 100%;
+	height: 100%;
+}
+
 h2 {
 	color: #1C1C1C;
 	text-align: center;
@@ -110,23 +126,26 @@ h2 {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	font-family: Rozha+One&display, serif;
-}
-
-.hero {
-	padding-left: 15.25em;
+	border: 1px solid #000000;
+	margin: 1rem;
 }
 
 /*====================================
 Body
 ====================================*/
-.feature {
-	float: left;
-	padding-left: 15.25em;
+.features {
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 10px;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
+
 
 /*===================================
 Footer
 ===================================*/
+
 footer {
 	background-color: #454545;
 }

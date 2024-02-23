@@ -133,13 +133,54 @@ h2 {
 /*====================================
 Body
 ====================================*/
+
+.features {
+	display: flex;
+}
+
+.feature img {
+	display: block;
+}
+
+.feature img,
+.feature p {
+	margin: auto;
+	padding-bottom: 1rem;
+	width: 75%;
+}
+
+.feature p {
+	padding-top: 1rem;
+}
+
+
+/*
 .features {
 	display: inline-grid;
 	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 100% 100%;
 	column-gap: 10px;
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
+
+.feature {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}*/
+
+.community img {
+	display: inline-flex;
+	padding-top: 1rem;
+	margin-left: 6.25%;
+}
+
+.community p {
+	float: right;
+	margin-right: 6.25%;
+}
+
 
 
 /*===================================

@@ -170,6 +170,31 @@ Body
 	align-items: center;
 }*/
 
+.community {
+	display: inline-grid;
+	width: 100%;
+	grid-area: 1 / 2 / span 1 / span 2;
+	justify-items: center;
+	grid-column-gap: 10px;
+	grid-template-columns: 30%, 1f;
+	grid-row: 1 / span 1;
+}
+
+
+.community img {
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	padding-left: 30%;
+	/*padding-right: 30%;*/
+}
+
+.community p {
+	grid-column-start: 2;
+	grid-column-end: span 1;
+	width: 60%;
+}
+
+/*
 .community img {
 	display: inline-flex;
 	padding-top: 1rem;
@@ -179,15 +204,16 @@ Body
 .community p {
 	float: right;
 	margin-right: 6.25%;
+
 }
 
-
+*/
 
 /*===================================
 Footer
 ===================================*/
 
-footer {
+.page-footer {
 	background-color: #454545;
 }
 

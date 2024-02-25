@@ -132,11 +132,10 @@ Features
 	display: block;
 }
 
-.feature img,
-.feature p {
+.feature img, .feature p {
 	margin: auto;
 	padding-bottom: 1rem;
-	width: 75%;
+	width:75%;
 }
 
 .feature p {
@@ -156,10 +155,10 @@ Community
 	display: block;
 }
 
-.community img,
-.community p {
+.community img, .community p {
 	margin: auto;
 	max-width: 40%;
+}
 
 .community p {
 	grid-column-start: 2;

@@ -1,3 +1,7 @@
+html {
+	font-size: 32px;
+}
+
 body,
 *,
 *:before,
@@ -13,6 +17,7 @@ a {
 	color: inherit;
 	font-weight: bold;
 	text-decoration: none;
+	font-size: 0.5rem;
 }
 
 a:hover {
@@ -36,6 +41,8 @@ p {
 	padding: 10px;
 	margin: 10px;
 	width: 30%;
+	font-size: 0.75rem;
+	text-align: center;
 }
 
 .fixed-width {
@@ -57,39 +64,47 @@ p {
 Header
 =================================*/
 
-h1 {
+h1 a {
+	/*
+	position: center;
+	display: block;
+	overflow: hidden;
+*/
+	position: absolute !important;
+	border: 0 !important;
+	padding-top: .6rem;
+	margin: 0 !important;
 	color: #F9F6EE;
 	font-family: "Outfit", sans-serif;
 	text-transform: uppercase;
-	font-size: 32px;
+	font-size: 1rem;
 	font-weight: bold;
-	position: center;
 	display: inline-block;
-	padding-top: .75em;
 }
 
 .page-header {
 	background-color: #454545;
-	padding-top: 2rem;
+	padding-top: .6rem;
 	padding-bottom: .5em;
 }
 
 .logo {
 	float: left;
-	padding-right: 2rem;
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
 }
 
 .page-header nav {
 	float: right;
 	text-transform: uppercase;
-	padding-top: 2.25em;
+	padding-top: .5rem;
 }
 
 .page-header nav li {
 	/*float: left;*/
 	margin-right: 3rem;
-	padding-bottom: 3rem;
 	display: inline-block;
 	color: #F9F6EE;
 }
@@ -132,10 +147,11 @@ Features
 	display: block;
 }
 
-.feature img, .feature p {
+.feature img,
+.feature p {
 	margin: auto;
 	padding-bottom: 1rem;
-	width:75%;
+	width: 75%;
 }
 
 .feature p {
@@ -149,13 +165,17 @@ Community
 .community {
 	display: flex;
 	column-gap: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .community img {
 	display: block;
+
 }
 
-.community img, .community p {
+.community img,
+.community p {
 	margin: auto;
 	max-width: 40%;
 }
@@ -164,8 +184,6 @@ Community
 	grid-column-start: 2;
 	grid-column-end: span 1;
 	width: 60%;
-	height: 400px;
-	aligh-self: center;
 }
 
 /*===================================
@@ -178,14 +196,16 @@ Footer
 
 .copyright {
 	border: none;
+	font-size: .5rem;
+	text-align: right;
 }
 
 
 footer li {
 	float: left;
 	margin-right: 3rem;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	display: block;
 	color: #F9F6EE;
 	background-color: #454545;
@@ -193,9 +213,8 @@ footer li {
 
 footer p {
 	float: right;
-	margin-right: 5rem;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	color: #F9F6EE;
 	background-color: #454545;
 }

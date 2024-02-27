@@ -14,7 +14,7 @@ body {
 }
 
 a {
-	color: inherit;
+	color: #F9F6EE;
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 0.5rem;
@@ -24,10 +24,6 @@ a:hover {
 	color: #CCA3DC;
 	font-weight: bold;
 	text-decoration: none;
-}
-
-.container {
-	border: 1px solid #000000;
 }
 
 a:active {
@@ -151,7 +147,7 @@ Features
 .feature p {
 	margin: auto;
 	padding-bottom: 1rem;
-	width: 75%;
+	width: 89%;
 }
 
 .feature p {
@@ -164,26 +160,30 @@ Community
 
 .community {
 	display: flex;
-	column-gap: 1rem;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding: 1rem .45rem;
 }
 
 .community img {
 	display: block;
-
+	width: 55%;
+	overflow: hidden;
+	padding-left: .05rem;
 }
 
 .community img,
 .community p {
 	margin: auto;
-	max-width: 40%;
+	min-height: 13.5rem;
 }
 
 .community p {
 	grid-column-start: 2;
 	grid-column-end: span 1;
-	width: 60%;
+	width: 35%;
+	overflow: hidden;
+	margin-right: 1.8rem;
+	text-align: center;
+	padding-top: 10%;
 }
 
 /*===================================

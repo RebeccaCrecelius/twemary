@@ -81,7 +81,7 @@ h1 a {
 .page-header {
 	background-color: #454545;
 	padding-top: .6rem;
-	padding-bottom: .5em;
+	padding-bottom: .35rem;
 }
 
 .logo {
@@ -212,7 +212,7 @@ Footer
 
 footer li {
 	float: left;
-	margin-right: 3rem;
+	margin-right: 1rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	display: block;

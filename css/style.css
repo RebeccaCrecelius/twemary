@@ -34,7 +34,7 @@ a:active {
 
 p {
 	border: 1px solid #000000;
-	padding: 10px;
+	padding: 1rem;
 	margin: 10px;
 	width: 30%;
 	font-size: 0.75rem;
@@ -109,15 +109,13 @@ h1 a {
 CTA
 ===================================*/
 
-.hero {
+#sign-up-section .hero {
+	background-image: background-image: url("img src="./images/ice-cream.jpg");
 	width: 100%;
-	height: 50%;
+	max-height: 30%;
+	overflow: hidden;
 }
 
-.hero img {
-	width: 100%;
-	height: 100%;
-}
 
 
 h2 {
@@ -137,28 +135,36 @@ h2 {
 Features
 ====================================*/
 
-.features {
+#features {
 	display: flex;
 	column-gap: 0.5rem;
-	margin: 1rem 1rem;
+	margin: 1rem 3rem;
+	max-height: 25rem;
+	justify-content: space-between;
 }
 
-.feature img {
+#features .features {
+	flex: 1;
+	justify-content: space-between;
+}
+
+#features .feature img {
 	display: block;
+	object-fit: cover;
 	width: 40%;
-	height: 80%;
-	overflow: hidden;
+	height: 70%;
+	margin: 0 auto;
 
 }
 
-.feature p {
+#features .feature p {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	height: 20%;
+	height: 30%;
 	font-family: sans-serif;
 }
 
-.feature img,
+#features .feature img,
 .feature p {
 	margin: auto;
 	width: 100%;
@@ -171,7 +177,7 @@ Community
 
 .community {
 	display: flex;
-	margin: 0 1rem;
+	margin: 0 3rem;
 	column-gap: 0.5rem;
 }
 

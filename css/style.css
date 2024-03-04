@@ -18,16 +18,24 @@ a {
 	font-size: 0.5rem;
 }
 
-.button {
+.button a {
 	display: inline-block;
 	border-radius: 4px;
 	background-color: #15342C;
 	color: #B7C18F;
-	margin-top: 1.5rem;
-	padding: .40rem .5rem;
+	margin-top: 1rem;
+	padding: .75rem .75rem;
 	font-family: sans-serif;
 	opacity: 1;
+	font-size: .75rem;
 }
+
+.button a:hover {
+	color: #F9F6EE;
+	font-weight: bold;
+	text-decoration: none;
+}
+
 
 span::after {
 	content: "\a";
@@ -40,6 +48,7 @@ span {
 	max-width: 80%;
 	font-size: .75rem;
 	color: 1C1C1C;
+	text-align: center;
 }
 
 
@@ -82,6 +91,10 @@ h2 {
 	margin-top: .5rem;
 	margin-left: .15rem;
 	text-transform: uppercase;
+}
+
+.center {
+	text-align: center;
 }
 
 /*=================================
@@ -164,10 +177,11 @@ CTA
 	position: relative;
 	background-color: #F9F6EE;
 	top: 5rem;
-	padding: 1rem 0 2rem 2rem;
+	padding: 1rem 2rem 2rem 2rem;
 	max-width: 35%;
 	margin-bottom: 4rem;
 	margin-left: 3rem;
+	border-radius: 0.125rem;
 }
 
 
@@ -180,22 +194,28 @@ Features
 
 #features {
 	display: flex;
-	column-gap: 0.5rem;
-	margin: 1rem 3rem;
-	max-height: 25rem;
-	justify-content: space-between;
+	column-gap: 0.75rem;
+	margin: 1rem auto;
+	width: 80%;
+	justify-content: center;
+	align-items: center;
 }
 
-#features .features {
+.feature {
 	flex: 1;
-	justify-content: space-between;
+}
+
+.image-container {
+	max-height: 4rem;
+	margin: 0 auto;
+	position: center;
 }
 
 #features .feature img {
 	display: block;
 	object-fit: cover;
 	width: 40%;
-	height: 70%;
+	height: 20rem;
 	margin: 0 auto;
 
 }
@@ -203,7 +223,8 @@ Features
 #features .feature p {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	height: 30%;
+	height: 5rem;
+	width: 88.5%;
 	font-family: sans-serif;
 }
 
@@ -218,30 +239,37 @@ Features
 Community
 ====================================*/
 
-.community {
+#community {
 	display: flex;
-	margin: 0 3rem;
-	column-gap: 0.5rem;
+	width: 100%;
+	margin: 3rem auto;
 }
 
-.community img {
-	display: block;
+.community-sign-up {
+	display: flex;
+}
+
+
+#community img {
+	display: inline-block;
 	width: 60%;
-	max-height: 75%;
+	height: auto;
 	overflow: hidden;
-
+	object-fit: cover;
 }
 
-.community img,
-.community p {
+.community-info {
+	margin-top: 1.75rem;
+}
+
+#community img,
+#community p {
 	margin: auto;
-	height: 15rem;
+	height: 12rem;
 }
 
-.community p {
+#community p {
 	font-family: sans-serif;
-	grid-column-start: 2;
-	grid-column-end: span 1;
 	width: 40%;
 	overflow: hidden;
 	text-align: center;

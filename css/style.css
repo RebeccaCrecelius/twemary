@@ -240,41 +240,42 @@ Community
 ====================================*/
 
 #community {
-	display: flex;
-	width: 100%;
-	margin: 3rem auto;
+	display: flex-grid;
+	grid-template-columns: repeat (1 2fr);
+	grid-auto-rows: 2rem;
+	margin-top: 4.5rem;
+	margin-bottom: 1rem;
+	margin-right: 3rem;
+	margin-left: 5.2rem;
+	align-items: center;
+	align-content: center;
 }
 
-.community-sign-up {
-	display: flex;
+#community .community-sign-up {
+	display: inline-block;
 }
-
 
 #community img {
-	display: inline-block;
-	width: 60%;
-	height: auto;
+	width: 20rem;
+	height: 13rem;
 	overflow: hidden;
 	object-fit: cover;
 }
 
-.community-info {
+/*
+#community .community-info {
 	margin-top: 1.75rem;
-}
-
-#community img,
-#community p {
-	margin: auto;
-	height: 12rem;
-}
+}*/
 
 #community p {
+	display: inline-block;
+	grid-column: 2;
 	font-family: sans-serif;
-	width: 40%;
+	width: 41.2%;
 	overflow: hidden;
 	text-align: center;
+	height: 7.2rem;
 	padding-top: 10%;
-
 }
 
 /*===================================

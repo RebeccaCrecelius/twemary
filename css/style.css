@@ -221,11 +221,12 @@ Features
 }
 
 #features .feature p {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	height: 5rem;
+	padding: 1rem 1.1rem;
+	height: auto;
 	width: 88.5%;
 	font-family: sans-serif;
+	min-height: 40%;
+
 }
 
 #features .feature img,
@@ -240,39 +241,48 @@ Community
 ====================================*/
 
 #community {
-	display: flex-grid;
+	display: flex;
 	margin-top: 4.5rem;
 	margin-bottom: 1rem;
 	align-items: center;
 	align-content: center;
-}
-
-#community .community-container {
-	display: flex;
-	flex-direction: rows;
-	justify-content: center;
-	margin-top: 2rem;
-}
-
-#community .community-container p {
-	border: 1px solid #000000;
-	width: 40%;
-	height: auto;
-	font-size: 0.75rem;
-	text-align: center;
-	font-family: sans-serif;
-	align-content: center;
+	margin-left: 5rem;
 	margin-right: 5rem;
 }
 
 
+#community .community-container {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+/*
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}*/
+
+#community .community-container p {
+	border: 1px solid #000000;
+	font-size: 0.75rem;
+	text-align: center;
+	font-family: sans-serif;
+	align-content: center;
+	width: 100%;
+	height: auto;
+
+}
+
+
 #community img {
-	margin-left: 5rem;
-	width: 60%;
-	margin-right: .75rem;
-	/*
-	height: auuto;
-*/
+	margin: 0 auto;
+	width: 80%;
+	flex: 1;
+	min-height 20%;
 	overflow: hidden;
 	object-fit: cover;
 }
@@ -284,7 +294,6 @@ Footer
 
 .page-footer {
 	background-color: #454545;
-	margin-top: 1rem;
 }
 
 .copyright {

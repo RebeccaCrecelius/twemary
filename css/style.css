@@ -1,3 +1,10 @@
+body,
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
 html {
 	font-size: 32px;
 }
@@ -8,7 +15,23 @@ body {
 
 .main-content {
 	position: relative;
-	top: 3.75rem;
+}
+
+h2 {
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #401F51;
+	font-size: 1.5rem;
+	padding-top: .5rem;
+}
+
+p {
+	border: 1px solid #000000;
+	padding: 1rem;
+	margin: 10px;
+	width: 30%;
+	font-size: 0.75rem;
+	text-align: center;
 }
 
 a {
@@ -16,6 +39,18 @@ a {
 	font-weight: bold;
 	text-decoration: none;
 	font-size: 0.5rem;
+}
+
+a:hover {
+	color: #CCA3DC;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:active {
+	color: #B7C18F;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 .button a {
@@ -51,36 +86,6 @@ span {
 	text-align: center;
 }
 
-
-a:hover {
-	color: #CCA3DC;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-a:active {
-	color: #B7C18F;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-p {
-	border: 1px solid #000000;
-	padding: 1rem;
-	margin: 10px;
-	width: 30%;
-	font-size: 0.75rem;
-	text-align: center;
-}
-
-
-h2 {
-	font-family: sans-serif;
-	font-weight: bold;
-	color: #401F51;
-	font-size: 1.5rem;
-	padding-top: .5rem;
-}
 
 .striking {
 	color: #1C1C1C;
@@ -149,7 +154,7 @@ a .logo {
 	margin-right: 3rem;
 	display: inline-block;
 	color: #F9F6EE;
-	margin-top: .75rem;
+	margin-top: .9rem;
 }
 
 /*===================================
@@ -162,7 +167,7 @@ CTA
 	align-items: flex-start;
 	height: 20rem;
 	background-image: url("../images/ice-cream.jpg");
-	background-position: bottom;
+	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -176,17 +181,13 @@ CTA
 	display: block;
 	position: relative;
 	background-color: #F9F6EE;
-	top: 5rem;
-	padding: 1rem 2rem 2rem 2rem;
+	top: 5.3rem;
+	padding: 1rem 2rem 1.5rem 2rem;
 	max-width: 35%;
 	margin-bottom: 4rem;
 	margin-left: 3rem;
 	border-radius: 0.125rem;
 }
-
-
-
-
 
 /*====================================
 Features
@@ -195,7 +196,7 @@ Features
 #features {
 	display: flex;
 	column-gap: 0.75rem;
-	margin: 1rem auto;
+	margin: 1rem auto 0 auto;
 	width: 80%;
 	justify-content: center;
 	align-items: center;
@@ -212,7 +213,7 @@ Features
 }
 
 #features .feature img {
-	display: block;
+	display: flex;
 	object-fit: cover;
 	width: 40%;
 	height: 20rem;
@@ -221,11 +222,12 @@ Features
 }
 
 #features .feature p {
-	padding: 1rem 1.1rem;
+	padding: 1.5rem 1.1rem;
+	width: 100%;
 	height: auto;
-	width: 88.5%;
 	font-family: sans-serif;
 	min-height: 40%;
+	line-height: .9rem;
 
 }
 
@@ -242,7 +244,6 @@ Community
 
 #community {
 	display: flex;
-	margin-top: 4.5rem;
 	margin-bottom: 1rem;
 	align-items: center;
 	align-content: center;
@@ -253,9 +254,8 @@ Community
 
 #community .community-container {
 	display: flex;
-	flex: 1;
 	justify-content: center;
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 
 /*
@@ -264,7 +264,8 @@ Community
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
-}*/
+}
+*/
 
 #community .community-container p {
 	border: 1px solid #000000;
@@ -280,12 +281,17 @@ Community
 
 #community img {
 	margin: 0 auto;
-	width: 80%;
-	flex: 1;
-	min-height 20%;
+	width: 100%;
+	height: auto;
 	overflow: hidden;
 	object-fit: cover;
 }
+
+.community-sign-up {
+	margin-right: 1rem;
+}
+
+
 
 
 /*===================================
@@ -294,12 +300,20 @@ Footer
 
 .page-footer {
 	background-color: #454545;
+	min-width: 100%;
+}
+
+.page-footer-content {
+	display: flex;
 }
 
 .copyright {
 	border: none;
 	font-size: .5rem;
 	text-align: right;
+	float: right;
+	color: #F9F6EE;
+	background-color: #454545;
 }
 
 
@@ -308,17 +322,6 @@ footer li {
 	margin-right: 1rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	display: block;
 	color: #F9F6EE;
 	background-color: #454545;
 }
-
-footer p {
-	float: right;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	color: #F9F6EE;
-	background-color: #454545;
-}
-
-*/

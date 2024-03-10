@@ -71,7 +71,6 @@ a:active {
 	text-decoration: none;
 }
 
-
 span::after {
 	content: "\a";
 	white-space: pre;
@@ -85,7 +84,6 @@ span {
 	color: 1C1C1C;
 	text-align: center;
 }
-
 
 .striking {
 	color: #1C1C1C;
@@ -137,8 +135,8 @@ a .logo {
 	display: block;
 	margin-left: 1rem;
 	margin-right: auto;
-	padding-top: .75rem;
-	padding-bottom: .75rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
 	width: 5%;
 	max-height: 5%;
 }
@@ -146,15 +144,14 @@ a .logo {
 .head-nav {
 	float: right;
 	text-transform: uppercase;
-	padding-top: .5rem;
+	padding-top: 1.25rem;
+	padding-bottom: .75rem;
 }
 
 .head-nav li {
-	/*float: left;*/
 	margin-right: 3rem;
 	display: inline-block;
 	color: #F9F6EE;
-	margin-top: .9rem;
 }
 
 /*===================================
@@ -291,20 +288,28 @@ Community
 	margin-right: 1rem;
 }
 
-
-
-
 /*===================================
 Footer
 ===================================*/
 
 .page-footer {
 	background-color: #454545;
-	min-width: 100%;
+	width: 100%;
+	margin: auto;
 }
 
 .page-footer-content {
-	display: flex;
+	display: inline-block;
+}
+
+footer li {
+	float: left;
+	display: block;
+	margin-right: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: #F9F6EE;
+	background-color: #454545;
 }
 
 .copyright {
@@ -313,15 +318,6 @@ Footer
 	text-align: right;
 	float: right;
 	color: #F9F6EE;
-	background-color: #454545;
-}
-
-
-footer li {
-	float: left;
-	margin-right: 1rem;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	color: #F9F6EE;
+	display: block;
 	background-color: #454545;
 }

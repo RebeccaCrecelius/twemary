@@ -22,7 +22,6 @@ h2 {
 	font-weight: bold;
 	color: #401F51;
 	font-size: 1.5rem;
-	padding-top: .5rem;
 }
 
 p {
@@ -58,7 +57,7 @@ a:active {
 	border-radius: 4px;
 	background-color: #15342C;
 	color: #B7C18F;
-	margin-top: 1rem;
+	margin-top: .5rem;
 	padding: .75rem .75rem;
 	font-family: sans-serif;
 	opacity: 1;
@@ -179,26 +178,24 @@ CTA
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	height: 20rem;
 	background-image: url("../images/ice-cream.jpg");
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100%;
-}
-
-#sign-up-section {
+	width: auto;
+	height: 15.625rem;
 	position: relative;
 }
+
 
 #sign-up-cta {
 	display: block;
 	position: relative;
 	background-color: hsla(44, 48%, 95%, 85%);
-	top: 5.3rem;
-	padding: 1rem 2rem 1.5rem 2rem;
+	top: 4rem;
+	padding: .75Srem .4rem 1rem .4rem;
 	max-width: 35%;
-	max-height: 85%;
+	max-height: auto%;
 	margin-bottom: 4rem;
 	margin-left: 3rem;
 	border-radius: 0.125rem;

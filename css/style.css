@@ -71,6 +71,7 @@ a:active {
 	text-decoration: none;
 }
 
+
 span::after {
 	content: "\a";
 	white-space: pre;
@@ -85,6 +86,7 @@ span {
 	text-align: center;
 }
 
+
 .striking {
 	color: #1C1C1C;
 	font-size: .85rem;
@@ -98,6 +100,21 @@ span {
 
 .center {
 	text-align: center;
+}
+
+.fixed-width {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
 }
 
 /*=================================
@@ -144,8 +161,8 @@ a .logo {
 .head-nav {
 	float: right;
 	text-transform: uppercase;
-	padding-top: 1.25rem;
-	padding-bottom: .75rem;
+	padding-top: 2.3%;
+	padding-bottom: 2%;
 }
 
 .head-nav li {
@@ -177,10 +194,11 @@ CTA
 #sign-up-cta {
 	display: block;
 	position: relative;
-	background-color: #F9F6EE;
+	background-color: hsla(44, 48%, 95%, 85%);
 	top: 5.3rem;
 	padding: 1rem 2rem 1.5rem 2rem;
 	max-width: 35%;
+	max-height: 85%;
 	margin-bottom: 4rem;
 	margin-left: 3rem;
 	border-radius: 0.125rem;
@@ -241,18 +259,19 @@ Community
 
 #community {
 	display: flex;
-	margin-bottom: 1rem;
+	margin-bottom: .75rem;
 	align-items: center;
 	align-content: center;
-	margin-left: 5rem;
-	margin-right: 5rem;
+	margin-left: 10%;
+	margin-right: .15rem;
 }
 
 
 #community .community-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 1rem;
+	margin-top: .70rem;
+	width: 90%;
 }
 
 /*
@@ -270,7 +289,7 @@ Community
 	text-align: center;
 	font-family: sans-serif;
 	align-content: center;
-	width: 100%;
+	width: 60%;
 	height: auto;
 
 }
@@ -282,10 +301,17 @@ Community
 	height: auto;
 	overflow: hidden;
 	object-fit: cover;
+	padding-top: .3rem;
+	padding-bottom: .15rem;
 }
 
 .community-sign-up {
-	margin-right: 1rem;
+	margin-right: .25rem;
+	width: 40rem;
+}
+
+@media only screen and (max-width: 600px) {
+	/* ruleset for >= 600px */
 }
 
 /*===================================
@@ -305,7 +331,7 @@ Footer
 footer li {
 	float: left;
 	display: block;
-	margin-right: 1rem;
+	margin-left: 1rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	color: #F9F6EE;
@@ -314,10 +340,11 @@ footer li {
 
 .copyright {
 	border: none;
+	position: absolute;
+	right: 0;
+	float: right;
 	font-size: .5rem;
 	text-align: right;
-	float: right;
 	color: #F9F6EE;
-	display: block;
 	background-color: #454545;
 }

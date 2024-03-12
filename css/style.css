@@ -116,6 +116,12 @@ span {
 	clear: both;
 }
 
+@media only screen and (max-width: 895px) {
+	.main-content {
+		top: 2.5625rem;
+	}
+}
+
 /*=================================
 Header
 =================================*/
@@ -201,6 +207,7 @@ CTA
 	border-radius: 0.125rem;
 }
 
+
 /*====================================
 Features
 ====================================*/
@@ -248,6 +255,14 @@ Features
 	margin: auto;
 	width: 100%;
 	padding-bottom: 0.5rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+	#features {
+		flex-direction: column;
+		padding: 0;
+	}
 }
 
 /*====================================
@@ -307,9 +322,7 @@ Community
 	width: 40rem;
 }
 
-@media only screen and (max-width: 600px) {
-	/* ruleset for >= 600px */
-}
+@media only screen and (max-width: 264.57 px) {}
 
 /*===================================
 Footer

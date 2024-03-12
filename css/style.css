@@ -183,19 +183,19 @@ CTA
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: auto;
-	height: 15.625rem;
+	height: auto;
 	position: relative;
+	padding-bottom: .71rem;
 }
-
 
 #sign-up-cta {
 	display: block;
 	position: relative;
 	background-color: hsla(44, 48%, 95%, 85%);
-	top: 4rem;
+	top: 4.1rem;
 	padding: .75rem .4rem 1rem .4rem;
 	max-width: 35%;
-	max-height: auto%;
+	max-height: auto;
 	margin-bottom: 4rem;
 	margin-left: 3rem;
 	border-radius: 0.125rem;

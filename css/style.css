@@ -116,10 +116,26 @@ span {
 	clear: both;
 }
 
+
 @media only screen and (max-width: 895px) {
 	.main-content {
 		top: 2.5625rem;
 	}
+}
+
+@media only screen and (max-width: 480px) {
+	h2 {
+		font-size: 1rem;
+	}
+
+	.striking {
+		font-size: .75rem;
+	}
+
+	span {
+		font-size: .6rem;
+	}
+
 }
 
 /*=================================
@@ -191,13 +207,13 @@ CTA
 	width: auto;
 	height: auto;
 	position: relative;
-	padding-bottom: .71rem;
+	c
 }
 
 #sign-up-cta {
 	display: block;
 	position: relative;
-	background-color: hsla(44, 48%, 95%, 85%);
+	background-color: hsla(44, 48%, 95%, .85);
 	top: 4.1rem;
 	padding: .75rem .4rem 1rem .4rem;
 	max-width: 35%;
@@ -207,6 +223,29 @@ CTA
 	border-radius: 0.125rem;
 }
 
+@media only screen and (max-width: 480px) {
+
+	#sign-up-section {
+		justify-content: center;
+		align-items: center;
+		background-image: none;
+		background-position: top;
+		width: auto;
+		height: auto;
+		position: relative;
+		padding-bottom: 0;
+	}
+
+	#sign-up-cta {
+		margin-top: 0;
+		top: 0;
+		padding: .75rem 0 .5rem 0;
+		max-width: 100%;
+		margin-bottom: 0;
+		margin-left: 0;
+		border-radius: 0;
+	}
+}
 
 /*====================================
 Features
@@ -263,30 +302,34 @@ Features
 		flex-direction: column;
 		padding: 0;
 	}
-}
 
-/*====================================
+	#features .feature p {
+		font-family: serif;
+		color: purple;
+	}
+
+	/*====================================
 Community
 ====================================*/
 
-#community {
-	display: flex;
-	margin-bottom: .75rem;
-	align-items: center;
-	align-content: center;
-	margin-left: 10%;
-	margin-right: .15rem;
-}
+	#community {
+		display: flex;
+		margin-bottom: .75rem;
+		align-items: center;
+		align-content: center;
+		margin-left: 10%;
+		margin-right: .15rem;
+	}
 
 
-#community .community-container {
-	display: flex;
-	justify-content: center;
-	margin-top: .70rem;
-	width: 90%;
-}
+	#community .community-container {
+		display: flex;
+		justify-content: center;
+		margin-top: .70rem;
+		width: 90%;
+	}
 
-/*
+	/*
 .row {
 	display: flex;
 	flex-direction: row;
@@ -295,66 +338,66 @@ Community
 }
 */
 
-#community .community-container p {
-	border: 1px solid #000000;
-	font-size: 0.75rem;
-	text-align: center;
-	font-family: sans-serif;
-	align-content: center;
-	width: 60%;
-	height: auto;
+	#community .community-container p {
+		border: 1px solid #000000;
+		font-size: 0.75rem;
+		text-align: center;
+		font-family: sans-serif;
+		align-content: center;
+		width: 60%;
+		height: auto;
 
-}
+	}
 
 
-#community img {
-	margin: 0 auto;
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-	object-fit: cover;
-	padding-top: .3rem;
-	padding-bottom: .15rem;
-}
+	#community img {
+		margin: 0 auto;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		object-fit: cover;
+		padding-top: .3rem;
+		padding-bottom: .15rem;
+	}
 
-.community-sign-up {
-	margin-right: .25rem;
-	width: 40rem;
-}
+	.community-sign-up {
+		margin-right: .25rem;
+		width: 40rem;
+	}
 
-@media only screen and (max-width: 264.57 px) {}
+	@media only screen and (max-width: 264.57 px) {}
 
-/*===================================
+	/*===================================
 Footer
 ===================================*/
 
-.page-footer {
-	background-color: #454545;
-	width: 100%;
-	margin: auto;
-}
+	.page-footer {
+		background-color: #454545;
+		width: 100%;
+		margin: auto;
+	}
 
-.page-footer-content {
-	display: inline-block;
-}
+	.page-footer-content {
+		display: inline-block;
+	}
 
-footer li {
-	float: left;
-	display: block;
-	margin-left: 1rem;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	color: #F9F6EE;
-	background-color: #454545;
-}
+	footer li {
+		float: left;
+		display: block;
+		margin-left: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		color: #F9F6EE;
+		background-color: #454545;
+	}
 
-.copyright {
-	border: none;
-	position: absolute;
-	right: 0;
-	float: right;
-	font-size: .5rem;
-	text-align: right;
-	color: #F9F6EE;
-	background-color: #454545;
-}
+	.copyright {
+		border: none;
+		position: absolute;
+		right: 0;
+		float: right;
+		font-size: .5rem;
+		text-align: right;
+		color: #F9F6EE;
+		background-color: #454545;
+	}

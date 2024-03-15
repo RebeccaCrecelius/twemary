@@ -120,12 +120,12 @@ span {
 
 @media only screen and (max-width: 895px) {
 	.main-content {
-		top: 2.5625rem;
+		top: 0rem;
 	}
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
 	h2 {
 		font-size: 1rem;
 	}
@@ -150,7 +150,10 @@ span {
 		margin-top: .4rem;
 		padding: .3rem .25rem;
 		font-size: .5rem;
-	}
+}
+	.main-content {
+	top: 0rem;
+}
 
 }
 
@@ -208,167 +211,173 @@ a .logo {
 	color: #F9F6EE;
 }
 
-@media only screen and (min-width: 480px) {
+/*
+
+@media only screen and (min-width: 680px) {
+	.logo {
+		display: none;
+}
+}
+
+*/
+
+@media only screen and (min-width: 680px) {
 	.mobile ul {
 		display: none;
 	}
+}
 
-	@media only screen and (max-width: 480px) {
-		.desktop ul {
-			display: none;
-		}
+@media only screen and (max-width: 680px) {
+  .head-nav ul {
+    display: none;
+  }
 
-		header .content {
-			padding: .5rem 0;
-		}
+  header .content {
+    padding: .5rem 0;
+  }
 
-		header ul {
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			width: 100%;
-		}
+  .mobile ul {
+    display: left;
+    align-items: left;
+    width: 100%;
+  }
 
-		header .mobile li {
-			padding: 0;
-		}
-	}
+  .logo {
+    display: none;
+}
+}
 
-
-	/*===================================
+/*===================================
 CTA
 ===================================*/
 
+#sign-up-section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-image: url("../images/ice-cream.jpg");
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: auto;
+	height: auto;
+	position: relative;
+	padding-bottom: .71rem;
+}
+
+#sign-up-cta {
+	display: block;
+	position: relative;
+	background-color: hsla(44, 48%, 95%, 85%);
+	top: 4.1rem;
+	padding: .75rem .4rem 1rem .4rem;
+	max-width: 35%;
+	max-height: auto;
+	margin-bottom: 4rem;
+	margin-left: 3rem;
+	border-radius: 0.125rem;
+}
+
+@media only screen and (max-width: 680px) {
+
 	#sign-up-section {
-		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
-		background-image: url("../images/ice-cream.jpg");
+		justify-content: center;
+		align-items: start;
+		background-image: none;
 		background-position: top;
-		background-size: cover;
-		background-repeat: no-repeat;
 		width: auto;
 		height: auto;
 		position: relative;
-		padding-bottom: .71rem;
+		padding-bottom: 0;
 	}
 
 	#sign-up-cta {
-		display: block;
-		position: relative;
-		background-color: hsla(44, 48%, 95%, 85%);
-		top: 4.1rem;
-		padding: .75rem .4rem 1rem .4rem;
-		max-width: 35%;
-		max-height: auto;
-		margin-bottom: 4rem;
-		margin-left: 3rem;
-		border-radius: 0.125rem;
+		margin-top: 2.4rem;
+		top: 0;
+		padding: 1rem 0 .5rem 0;
+		max-width: 100%;
+		margin-bottom: 0;
+		margin-left: 0;
+		border-radius: 0;
 	}
-
-	@media only screen and (max-width: 480px) {
-
-		#sign-up-section {
-			justify-content: center;
-			align-items: start;
-			background-image: none;
-			background-position: top;
-			width: auto;
-			height: auto;
-			position: relative;
-			padding-bottom: 0;
-		}
-
-		#sign-up-cta {
-			margin-top: 0;
-			top: 0;
-			padding: 1rem 0 .5rem 0;
-			max-width: 100%;
-			margin-bottom: 0;
-			margin-left: 0;
-			border-radius: 0;
-		}
-
-		.hero {
-			justify-content: center;
-			align-items: start;
-		}
+	
+	.hero {
+		justify-content: center;
+		align-items: start;
 	}
+}
 
-
-
-
-	/*====================================
+/*====================================
 Features
 ====================================*/
 
-	#features {
-		display: flex;
-		column-gap: 0.75rem;
-		margin: 1rem auto 0 auto;
-		width: 80%;
-		justify-content: center;
-		align-items: center;
-	}
+#features {
+	display: flex;
+	column-gap: 0.75rem;
+	margin: 1rem auto 0 auto;
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+}
 
-	.feature {
-		flex: 1;
-	}
+.feature {
+	flex: 1;
+}
 
-	.image-container {
-		max-height: 4rem;
-		margin: 0 auto;
-		position: center;
-	}
+.image-container {
+	max-height: 4rem;
+	margin: 0 auto;
+	position: center;
+}
 
-	#features .feature img {
-		display: flex;
-		object-fit: cover;
-		width: 40%;
-		height: 20rem;
-		margin: 0 auto;
+#features .feature img {
+	display: flex;
+	object-fit: cover;
+	width: 40%;
+	height: 20rem;
+	margin: 0 auto;
 
-	}
+}
 
-	#features .feature p {
-		padding: 1.5rem 1.1rem;
-		width: 100%;
-		height: auto;
-		font-family: sans-serif;
-		min-height: 40%;
-		line-height: .9rem;
+#features .feature p {
+	padding: 1.5rem 1.1rem;
+	width: 100%;
+	height: auto;
+	font-family: sans-serif;
+	min-height: 40%;
+	line-height: .9rem;
 
-	}
+}
 
-	#features .feature img,
-	.feature p {
-		margin: auto;
-		width: 100%;
-		padding-bottom: 0.5rem;
-	}
+#features .feature img,
+.feature p {
+	margin: auto;
+	width: 100%;
+	padding-bottom: 0.5rem;
+}
 
-	/*====================================
+/*====================================
 Community
 ====================================*/
 
-	#community {
-		display: flex;
-		margin-bottom: .75rem;
-		align-items: center;
-		align-content: center;
-		margin-left: 10%;
-		margin-right: .15rem;
-	}
+#community {
+	display: flex;
+	margin-bottom: .75rem;
+	align-items: center;
+	align-content: center;
+	margin-left: 10%;
+	margin-right: .15rem;
+}
 
 
-	#community .community-container {
-		display: flex;
-		justify-content: center;
-		margin-top: .70rem;
-		width: 90%;
-	}
+#community .community-container {
+	display: flex;
+	justify-content: center;
+	margin-top: .70rem;
+	width: 90%;
+}
 
-	/*
+/*
 .row {
 	display: flex;
 	flex-direction: row;
@@ -377,68 +386,67 @@ Community
 }
 */
 
-	#community .community-container p {
-		border: 1px solid #000000;
-		font-size: 0.75rem;
-		text-align: center;
-		font-family: sans-serif;
-		align-content: center;
-		width: 60%;
-		height: auto;
+#community .community-container p {
+	border: 1px solid #000000;
+	font-size: 0.75rem;
+	text-align: center;
+	font-family: sans-serif;
+	align-content: center;
+	width: 60%;
+	height: auto;
 
-	}
+}
 
+#community img {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	object-fit: cover;
+	padding-top: .3rem;
+	padding-bottom: .15rem;
+}
 
-	#community img {
-		margin: 0 auto;
-		width: 100%;
-		height: auto;
-		overflow: hidden;
-		object-fit: cover;
-		padding-top: .3rem;
-		padding-bottom: .15rem;
-	}
+.community-sign-up {
+	margin-right: .25rem;
+	width: 40rem;
+}
 
-	.community-sign-up {
-		margin-right: .25rem;
-		width: 40rem;
-	}
+@media only screen and (max-width: 600px) {
+	/* ruleset for >= 600px */
+}
 
-	@media only screen and (max-width: 600px) {
-		/* ruleset for >= 600px */
-	}
-
-	/*===================================
+/*===================================
 Footer
 ===================================*/
 
-	.page-footer {
-		background-color: #454545;
-		width: 100%;
-		margin: auto;
-	}
+.page-footer {
+	background-color: #454545;
+	width: 100%;
+	margin: auto;
+}
 
-	.page-footer-content {
-		display: inline-block;
-	}
+.page-footer-content {
+	display: inline-block;
+}
 
-	footer li {
-		float: left;
-		display: block;
-		margin-left: 1rem;
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-		color: #F9F6EE;
-		background-color: #454545;
-	}
+footer li {
+	float: left;
+	display: block;
+	margin-left: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: #F9F6EE;
+	background-color: #454545;
+}
 
-	.copyright {
-		border: none;
-		position: absolute;
-		right: 0;
-		float: right;
-		font-size: .5rem;
-		text-align: right;
-		color: #F9F6EE;
-		background-color: #454545;
-	}
+.copyright {
+	border: none;
+	position: absolute;
+	right: 0;
+	float: right;
+	font-size: .5rem;
+	text-align: right;
+	color: #F9F6EE;
+	background-color: #454545;
+}

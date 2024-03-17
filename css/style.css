@@ -168,6 +168,7 @@ span {
 	}
 }
 
+
 @media only screen and (max-width: 895px) {
 	.main-content {
 		top: 0rem;
@@ -277,6 +278,10 @@ a .logo {
 	margin-right: 3rem;
 	display: inline-block;
 	color: #F9F6EE;
+}
+
+.navigation-bar {
+	width: 100%;
 }
 
 /*

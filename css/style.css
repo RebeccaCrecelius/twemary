@@ -131,10 +131,12 @@ span {
 	text-align: center;
 }
 
+/*
 .fixed-width {
 	width: 940px;
 	margin: 0 auto;
 }
+
 
 .clearfix:before,
 .clearfix:after {
@@ -145,6 +147,8 @@ span {
 .clearfix:after {
 	clear: both;
 }
+
+*/
 
 @media only screen and (max-width: 1160px) {
 	.button a {
@@ -172,6 +176,28 @@ span {
 @media only screen and (max-width: 895px) {
 	.main-content {
 		top: 0rem;
+	}
+
+	.button a {
+		display: block;
+		border-radius: 3px;
+		margin-top: .4rem;
+		padding: .3rem .25rem;
+		font-size: .5rem;
+		text-align: center;
+		width: 45%;
+		height: auto;
+	}
+
+	.button2 a {
+		display: block;
+		border-radius: 3px;
+		margin-top: .4rem;
+		padding: .3rem .25rem;
+		font-size: .5rem;
+		text-align: center;
+		width: 45%;
+		height: auto;
 	}
 }
 
@@ -220,9 +246,12 @@ span {
 		height: auto;
 	}
 
+/*
+
 	.main-content {
 		top: 0rem;
 	}
+*/
 
 }
 
@@ -267,6 +296,11 @@ a .logo {
 	max-height: 5%;
 }
 
+.navigation-bar {
+	width: 100%;
+	margin: auto;
+}
+
 .head-nav {
 	float: right;
 	text-transform: uppercase;
@@ -280,9 +314,6 @@ a .logo {
 	color: #F9F6EE;
 }
 
-.navigation-bar {
-	width: 100%;
-}
 
 /*
 
@@ -344,11 +375,21 @@ CTA
 	background-color: hsla(44, 48%, 95%, 85%);
 	top: 4rem;
 	padding: .75rem .4rem 1rem .4rem;
-	max-width: 35%;
+	max-width: 40%;
 	max-height: auto;
 	margin-bottom: 4rem;
 	margin-left: 3rem;
 	border-radius: 0.125rem;
+}
+
+@media only screen and (max-width: 1060px) {
+	#sign-up-cta{
+		justify-content: center;
+		max-width: 65%;
+		height: auto;
+		margin-left: 1rem;
+		top: 3.5rem;
+}
 }
 
 @media only screen and (max-width: 680px) {
@@ -365,7 +406,7 @@ CTA
 	}
 
 	#sign-up-cta {
-		margin-top: 2.4rem;
+		margin-top: 0rem;
 		top: 0;
 		padding: 1rem 0 .5rem 0;
 		max-width: 100%;

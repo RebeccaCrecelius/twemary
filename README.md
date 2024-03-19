@@ -32,11 +32,11 @@ Additional technologies expected with project growth.
 
 The project is still in development, but the code may be viewed using a text editor. 
 
-## Project status
+## Project Status
 
 Still in development. 
 
-## Contact information
+## Contact Information
 
 Rebecca A. Crecelius, MFA
 

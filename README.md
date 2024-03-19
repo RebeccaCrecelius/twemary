@@ -1,6 +1,6 @@
-#Twemary
+# Twemary
 
-##Introduction
+## Introduction
 
 Twemary will be an ice cream locator app. 
 The project is being built by Rebecca Crecelius. 
@@ -19,7 +19,7 @@ The purpose of the project is the following:
 *  To create an app which people may enjoy and provide a way for people to connect.
 *  To develop a solid portfolio project demonstrating multiple skillsets.
 
-##Technologies
+## Technologies
 
 Project is created with:
 
@@ -28,15 +28,15 @@ Project is created with:
 
 Additional technologies expected with project growth. 
 
-**Launch
+## Launch
 
 The project is still in development, but the code may be viewed using a text editor. 
 
-##Project status: 
+## Project status
 
 Still in development. 
 
-##Contact information
+## Contact information
 
 Rebecca A. Crecelius, MFA
 

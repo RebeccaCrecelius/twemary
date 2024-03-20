@@ -18,12 +18,18 @@ body {
 	top: 0;
 }
 
+h2,
+span,
+.button a,
+.button2 a {
+	font-family: sans-serif;
+}
+
 h1 {
 	display: none;
 }
 
 h2 {
-	font-family: sans-serif;
 	font-weight: bold;
 	color: #401F51;
 	font-size: 1.3rem;
@@ -47,26 +53,21 @@ a {
 
 a:hover {
 	color: #CCA3DC;
-	font-weight: bold;
-	text-decoration: none;
 }
 
 a:active {
 	color: #B7C18F;
-	font-weight: bold;
-	text-decoration: none;
 }
 
 
-.button a {
+.button a, 
+.button2 a {
 	display: flex;
 	border-radius: 4px;
 	background-color: #15342C;
 	color: #B7C18F;
 	margin-top: .5rem;
-	margin-left: 1rem;
 	padding: .5rem .5rem;
-	font-family: sans-serif;
 	opacity: 1;
 	font-size: .5rem;
 	width: 40%;
@@ -74,33 +75,23 @@ a:active {
 	float: left;
 }
 
-.button a:hover {
-	color: #F9F6EE;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-.button2 a {
-	display: flex;
-	border-radius: 4px;
-	background-color: #15342C;
-	color: #B7C18F;
-	margin-top: .5rem;
-	margin-right: 1rem;
-	padding: .5rem .5rem;
-	font-family: sans-serif;
-	opacity: 1;
-	font-size: .5rem;
-	width: 40%;
-	height: auto;
-	float: right;
-}
-
+.button a:hover,
 .button2 a:hover {
 	color: #F9F6EE;
 	font-weight: bold;
 	text-decoration: none;
 }
+
+.button a {
+	float: left;
+	margin-left: 1rem;
+}
+	
+.button2 a {
+	float: right;
+	margin-right: 1rem;
+}
+
 
 span::after {
 	content: "\a";
@@ -108,7 +99,6 @@ span::after {
 }
 
 span {
-	font-family: sans-serif;
 	display: inline-block;
 	max-width: 80%;
 	font-size: .6rem;
@@ -116,12 +106,10 @@ span {
 	text-align: center;
 }
 
-
 .striking {
 	color: #1C1C1C;
 	font-size: .7rem;
 	font-weight: bold;
-	font-family: sans-serif;
 	margin-bottom: .5rem;
 	margin-top: .5rem;
 	margin-left: .15rem;
@@ -131,36 +119,8 @@ span {
 	text-align: center;
 }
 
-/*
-.fixed-width {
-	width: 940px;
-	margin: 0 auto;
-}
-
-
-.clearfix:before,
-.clearfix:after {
-	content: "";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
-*/
-
 @media only screen and (max-width: 1160px) {
-	.button a {
-		float: left;
-		width: 55%;
-		height: auto;
-		align-content: center;
-		margin-left: 2rem;
-		margin-right: 3rem;
-		text-align: center;
-	}
-
+	.button a,
 	.button2 a {
 		float: left;
 		width: 55%;
@@ -168,27 +128,16 @@ span {
 		align-content: center;
 		margin-left: 2rem;
 		margin-right: 3rem;
-		text-aligh: center;
+		text-align: center;
 	}
 }
-
 
 @media only screen and (max-width: 895px) {
 	.main-content {
 		top: 0rem;
 	}
 
-	.button a {
-		display: block;
-		border-radius: 3px;
-		margin-top: .4rem;
-		padding: .3rem .25rem;
-		font-size: .5rem;
-		text-align: center;
-		width: 45%;
-		height: auto;
-	}
-
+	.button a,
 	.button2 a {
 		display: block;
 		border-radius: 3px;
@@ -203,6 +152,7 @@ span {
 
 
 @media only screen and (max-width: 680px) {
+	
 	h2 {
 		font-size: 1rem;
 	}
@@ -223,20 +173,9 @@ span {
 	}
 
 
-	.button a {
-		diplay: block;
-		float: left;
-		border-radius: 3px;
-		margin-top: .4rem;
-		padding: .3rem .25rem;
-		font-size: .5rem;
-		text-align: center;
-		width: 40%;
-		height: auto;
-	}
-
+	.button a, 
 	.button2 a {
-		display: block float: right;
+		diplay: block;
 		border-radius: 3px;
 		margin-top: .4rem;
 		padding: .3rem .25rem;
@@ -245,14 +184,6 @@ span {
 		width: 40%;
 		height: auto;
 	}
-
-/*
-
-	.main-content {
-		top: 0rem;
-	}
-*/
-
 }
 
 /*=================================
@@ -313,17 +244,6 @@ a .logo {
 	display: inline-block;
 	color: #F9F6EE;
 }
-
-
-/*
-
-@media only screen and (min-width: 680px) {
-	.logo {
-		display: none;
-}
-}
-
-*/
 
 @media only screen and (min-width: 680px) {
 	.mobile ul {
@@ -490,15 +410,6 @@ Community
 	margin-top: .70rem;
 	width: 90%;
 }
-
-/*
-.row {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
-}
-*/
 
 #community .community-container p {
 	border: 1px solid #000000;

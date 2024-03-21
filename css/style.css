@@ -122,12 +122,12 @@ span {
 @media only screen and (max-width: 1160px) {
 	.button a,
 	.button2 a {
-		float: left;
-		width: 55%;
+		float: none;
+		max-width: 50%;
 		height: auto;
 		align-content: center;
-		margin-left: 2rem;
-		margin-right: 3rem;
+		margin-left: 25%;
+		margin-right: 25%;
 		text-align: center;
 	}
 }
@@ -139,7 +139,7 @@ span {
 
 	.button a,
 	.button2 a {
-		display: block;
+		float: center;
 		border-radius: 3px;
 		margin-top: .4rem;
 		padding: .3rem .25rem;
@@ -341,6 +341,35 @@ CTA
 	}
 }
 
+@media only screen and (max-width: 420px) {
+
+	#sign-up-section {
+		justify-content: center;
+		align-items: start;
+		background-image: none;
+		background-position: top;
+		width: auto;
+		height: auto;
+		position: relative;
+		padding-bottom: 0;
+	}
+
+	#sign-up-cta {
+		margin-top: 0rem;
+		top: 0;
+		padding: 1rem 0 .5rem 0;
+		max-width: 100%;
+		margin-bottom: 0;
+		margin-left: 0;
+		border-radius: 0;
+	}
+
+	.hero {
+		justify-content: center;
+		align-items: start;
+	}
+}
+
 /*====================================
 Features
 ====================================*/
@@ -423,6 +452,7 @@ Community
 }
 
 #community img {
+	display: flex;
 	margin: 0 auto;
 	width: 100%;
 	height: auto;
@@ -435,10 +465,6 @@ Community
 .community-sign-up {
 	margin-right: .25rem;
 	width: 40rem;
-}
-
-@media only screen and (max-width: 600px) {
-	/* ruleset for >= 600px */
 }
 
 /*===================================

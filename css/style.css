@@ -60,28 +60,41 @@ a:active {
 }
 
 
-.button a, 
-.button2 a {
+.buttonGroup {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+}
+
+
+
+
+.button, 
+.button2 {
 	display: flex;
 	border-radius: 4px;
 	background-color: #15342C;
 	color: #B7C18F;
-	margin-top: .5rem;
-	padding: .5rem .5rem;
+	margin: .30rem;
+	padding: .30rem;
 	opacity: 1;
 	font-size: .5rem;
-	width: 40%;
+	width: 25%;
 	height: auto;
-	float: left;
+	float: center;
 }
 
+.button:hover,
+.button2:hover,
 .button a:hover,
 .button2 a:hover {
-	color: #F9F6EE;
+	background-color: #401F51;
+	color: white;
 	font-weight: bold;
 	text-decoration: none;
 }
 
+/*
 .button a {
 	float: left;
 	margin-left: 1rem;
@@ -91,7 +104,7 @@ a:active {
 	float: right;
 	margin-right: 1rem;
 }
-
+*/
 
 span::after {
 	content: "\a";
@@ -137,15 +150,21 @@ span {
 		top: 0rem;
 	}
 
+	.buttonGroup {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 	.button a,
 	.button2 a {
-		float: center;
+		flex: auto;
+		space-between: .05rem;
 		border-radius: 3px;
 		margin-top: .4rem;
-		padding: .3rem .25rem;
 		font-size: .5rem;
 		text-align: center;
-		width: 45%;
+		max-width: 100%;
 		height: auto;
 	}
 }
@@ -172,17 +191,24 @@ span {
 		top: 2.3rem;
 	}
 
+	.buttonGroup {
+		display: flex;
+		align-items: center;
+		justify-content: stretch;
+}
 
-	.button a, 
-	.button2 a {
-		diplay: block;
-		border-radius: 3px;
-		margin-top: .4rem;
-		padding: .3rem .25rem;
-		font-size: .5rem;
-		text-align: center;
-		width: 40%;
-		height: auto;
+
+.button, 
+.button2 {
+	diplay: flex;
+	flex: auto;
+	border-radius: 3px;
+	margin-top: .4rem;
+	padding: .3rem .25rem;
+	font-size: .5rem;
+	text-align: center;
+	width: 100%;
+	height: auto;
 	}
 }
 

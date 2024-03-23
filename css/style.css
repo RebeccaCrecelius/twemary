@@ -61,27 +61,30 @@ a:active {
 
 
 .buttonGroup {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
 
 
-.button, 
+.button,
 .button2 {
 	display: flex;
 	border-radius: 4px;
+	flex: 2 1 auto;
 	background-color: #15342C;
 	color: #B7C18F;
 	margin: .30rem;
-	padding: .30rem;
+	padding: .8rem .4rem .8rem .4rem;
 	opacity: 1;
 	font-size: .5rem;
 	width: 25%;
 	height: auto;
 	float: center;
+	justify-content: center;
+	box-shadow: 4px 5px 2px gray;
 }
 
 .button:hover,
@@ -117,6 +120,7 @@ span {
 	font-size: .6rem;
 	color: 1C1C1C;
 	text-align: center;
+	margin-bottom: .5rem;
 }
 
 .striking {
@@ -133,45 +137,62 @@ span {
 }
 
 @media only screen and (max-width: 1160px) {
-	.button a,
-	.button2 a {
+
+	.button,
+	.button2 {
+		flex: 2 1 auto;
 		float: none;
-		max-width: 50%;
+		padding: 1rem .75rem 1rem .75rem;
+		max-width: 100%;
 		height: auto;
 		align-content: center;
-		margin-left: 25%;
-		margin-right: 25%;
 		text-align: center;
 	}
 }
 
-@media only screen and (max-width: 895px) {
+@media only screen and (max-width: 920px) {
+
+	.button,
+	.button2 {
+		padding: .6rem .3rem .6rem .3rem;
+	}
+}
+
+@media only screen and (max-width: 897px) {
 	.main-content {
 		top: 0rem;
 	}
 
 	.buttonGroup {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-	.button a,
-	.button2 a {
+	.button,
+	.button2 {
 		flex: auto;
 		space-between: .05rem;
 		border-radius: 3px;
-		margin-top: .4rem;
 		font-size: .5rem;
 		text-align: center;
 		max-width: 100%;
 		height: auto;
+		padding: .5rem .3rem .5rem .3carem;
 	}
 }
 
+@media only screen and (max-width: 870px) {
+
+	.button,
+	.button2 {
+		padding: .4rem .2rem .4rem .2rem;
+		margin: .10rem;
+	}
+}
 
 @media only screen and (max-width: 680px) {
-	
+
 	h2 {
 		font-size: 1rem;
 	}
@@ -195,20 +216,20 @@ span {
 		display: flex;
 		align-items: center;
 		justify-content: stretch;
-}
+	}
 
 
-.button, 
-.button2 {
-	diplay: flex;
-	flex: auto;
-	border-radius: 3px;
-	margin-top: .4rem;
-	padding: .3rem .25rem;
-	font-size: .5rem;
-	text-align: center;
-	width: 100%;
-	height: auto;
+	.button,
+	.button2 {
+		diplay: flex;
+		flex: auto;
+		border-radius: 3px;
+		margin-top: .4rem;
+		padding: .2rem;
+		font-size: .5rem;
+		text-align: center;
+		width: 100%;
+		height: auto;
 	}
 }
 
@@ -249,7 +270,7 @@ a .logo {
 	margin-right: auto;
 	padding-top: .5rem;
 	padding-bottom: .5rem;
-	width: 5%;
+	width: 12.5%;
 	max-height: 5%;
 }
 
@@ -320,7 +341,7 @@ CTA
 	position: relative;
 	background-color: hsla(44, 48%, 95%, 85%);
 	top: 4rem;
-	padding: .75rem .4rem 1rem .4rem;
+	padding: .75rem .4rem .75rem .4rem;
 	max-width: 40%;
 	max-height: auto;
 	margin-bottom: 4rem;
@@ -329,13 +350,13 @@ CTA
 }
 
 @media only screen and (max-width: 1060px) {
-	#sign-up-cta{
+	#sign-up-cta {
 		justify-content: center;
 		max-width: 65%;
 		height: auto;
 		margin-left: 1rem;
 		top: 3.5rem;
-}
+	}
 }
 
 @media only screen and (max-width: 680px) {

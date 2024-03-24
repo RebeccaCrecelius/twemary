@@ -186,8 +186,27 @@ span {
 
 	.button,
 	.button2 {
-		padding: .4rem .2rem .4rem .2rem;
-		margin: .10rem;
+		padding: 2%;
+		margin: .2rem;
+	}
+}
+
+@media only screen and (max-width: 813px) {
+
+	.button,
+	.button2 {
+		padding: 1.5%;
+		margin: .1rem;
+	}
+}
+
+
+@media only screen and (max-width: 785px) {
+
+	.button,
+	.button2 {
+		padding: 4%;
+		margin: 1rem;
 	}
 }
 
@@ -225,11 +244,32 @@ span {
 		flex: auto;
 		border-radius: 3px;
 		margin-top: .4rem;
-		padding: .2rem;
+		padding-top: .75rem;
+		padding-bottom: .75rem;
+		padding-right: 6%;
+		padding-left: 6%;
 		font-size: .5rem;
 		text-align: center;
 		width: 100%;
 		height: auto;
+	}
+}
+
+
+@media only screen and (max-width: 505px) {
+
+	.button,
+	.button2 {
+		padding: 4%;
+	}
+}
+
+@media only screen and (max-width: 395px) {
+
+	.button,
+	.button2 {
+		padding: 1%;
+		margin: .15rem;
 	}
 }
 

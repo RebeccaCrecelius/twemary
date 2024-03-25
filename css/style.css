@@ -59,6 +59,11 @@ a:active {
 	color: #B7C18F;
 }
 
+.main-content {
+	position: static;
+	top: 0rem;
+}
+
 
 .buttonGroup {
 	display: flex;
@@ -192,7 +197,6 @@ span {
 }
 
 @media only screen and (max-width: 813px) {
-
 	.button,
 	.button2 {
 		padding: 1.5%;
@@ -202,12 +206,11 @@ span {
 
 
 @media only screen and (max-width: 785px) {
-
 	.button,
 	.button2 {
 		padding: 4%;
 		margin: 1rem;
-	}
+}
 }
 
 @media only screen and (max-width: 680px) {
@@ -257,22 +260,19 @@ span {
 
 
 @media only screen and (max-width: 505px) {
-
 	.button,
 	.button2 {
 		padding: 4%;
-	}
+}
 }
 
 @media only screen and (max-width: 395px) {
-
 	.button,
 	.button2 {
 		padding: 1%;
 		margin: .15rem;
 	}
 }
-
 /*=================================
 Header
 =================================*/
@@ -463,16 +463,15 @@ Features
 
 #features {
 	display: flex;
+/*
 	column-gap: 0.75rem;
+*/
+	height: 5rem;	
 	margin: 1rem auto 0 auto;
 	width: 80%;
-	justify-content: center;
-	align-items: center;
+	background-color: #E4E0D8;
 }
 
-.feature {
-	flex: 1;
-}
 
 .image-container {
 	max-height: 4rem;
@@ -480,7 +479,8 @@ Features
 	position: center;
 }
 
-#features .feature img {
+
+.feature img {
 	display: flex;
 	object-fit: cover;
 	width: 40%;
@@ -489,7 +489,8 @@ Features
 
 }
 
-#features .feature p {
+
+.feature p {
 	padding: 1.5rem 1.1rem;
 	width: 100%;
 	height: auto;
@@ -499,12 +500,14 @@ Features
 
 }
 
-#features .feature img,
+
+.feature img,
 .feature p {
 	margin: auto;
 	width: 100%;
 	padding-bottom: 0.5rem;
 }
+*/
 
 /*====================================
 Community
@@ -512,6 +515,7 @@ Community
 
 #community {
 	display: flex;
+	position: static;
 	margin-bottom: .75rem;
 	align-items: center;
 	align-content: center;

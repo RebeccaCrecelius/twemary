@@ -473,28 +473,19 @@ Features
 
 
 .image-container {
-	max-height: 16rem;
+	max-height: 13rem;
 	margin: 0 auto;
 	position: center;
-	object-fit: cover;
+	object-fit: fill;
 	width: 100%;
-	height: auto;
 	overflow: hidden;
 }
 
-.content {
-	heigth: 1rem;
-}
-
-
 .feature img {
 	display: flex;
-	width: 40%;
-	height: auto;
 	margin: 0 auto;
 	object-fit: fill;
 }
-
 
 .feature p {
 	padding: 1.5rem 1.1rem;
@@ -510,7 +501,7 @@ Features
 .feature p {
 	margin: auto;
 	width: 100%;
-	padding-bottom: 0.5rem;
+	padding-bottom: 1.5rem;
 }
 
 /*====================================
@@ -520,24 +511,26 @@ Community
 
 #community {
 	display: flex;
-	margin-top: 6rem;
+	margin-top: 1.5rem;
 	margin-bottom: .75rem;
-	align-items: center;5
+	align-items: center;
 	align-content: center;
 	margin-left: 10%;
+/*
 	margin-right: .15rem;
+*/
 	flex-wrap: nowrap;
 }
 
 
-#community .community-container {
+.community-container {
 	display: flex;
 	justify-content: center;
-	margin-top: .70rem;
+	margin-top: .5rem;
 	width: 90%;
 }
 
-#community .community-container p {
+.community-container p {
 	border: 1px solid #000000;
 	font-size: 0.75rem;
 	text-align: center;
@@ -548,7 +541,7 @@ Community
 
 }
 
-#community img {
+img {
 	margin: 0 auto;
 	width: 100%;
 	height: auto;

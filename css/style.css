@@ -75,7 +75,8 @@ a:active {
 
 
 .button,
-.button2 {
+.button2,
+.button3 {
 	display: flex;
 	border-radius: 4px;
 	flex: 2 1 auto;
@@ -95,7 +96,9 @@ a:active {
 .button:hover,
 .button2:hover,
 .button a:hover,
-.button2 a:hover {
+.button2 a:hover,
+.button3: hover,
+.button3 a: hover {
 	background-color: #401F51;
 	color: white;
 	font-weight: bold;
@@ -128,7 +131,8 @@ span {
 	margin-bottom: .5rem;
 }
 
-.striking {
+.striking,
+.striking2 {
 	color: #1C1C1C;
 	font-size: .7rem;
 	font-weight: bold;
@@ -461,14 +465,22 @@ CTA
 Features
 ====================================*/
 
-#features {
+#features,
+#features2 {
 	display: flex;
 	column-gap: 0.75rem;
 	height: 19rem;	
-	margin: 1rem auto 0 auto;
 	width: 80%;
 	background-color: #E4E0D8;
 	flex-direction: row;
+}
+
+#features {
+	margin: 1rem auto 0 auto;
+}
+
+#features2 {
+	margin: 2rem auto 2.5rem auto;
 }
 
 
@@ -485,6 +497,13 @@ Features
 	display: flex;
 	margin: 0 auto;
 	object-fit: fill;
+}
+
+.row1,
+.row2,
+.row3,
+.row4 {
+width: 100%;
 }
 
 .feature p {
@@ -504,11 +523,13 @@ Features
 	padding-bottom: 1.5rem;
 }
 
+
+
 /*====================================
 Community
 ====================================*/
 
-
+/*
 #community {
 	display: flex;
 	margin-top: 1.5rem;
@@ -519,10 +540,12 @@ Community
 /*
 	margin-right: .15rem;
 */
+
+/*
 	flex-wrap: nowrap;
 }
-
-
+*/
+/*
 .community-container {
 	display: flex;
 	justify-content: center;
@@ -556,8 +579,15 @@ img {
 	width: 40rem;
 }
 
-@media only screen and (max-width: 600px) {
-	/* ruleset for >= 600px */
+*/
+
+/*===================================
+Newsletter
+===================================*/
+
+
+#newsletter {
+background-image: url("../images/ice-cream.jpg");
 }
 
 /*===================================

@@ -536,6 +536,106 @@ Newsletter
 	background-color: #F9F6EE;
 }
 
+.signupForm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	hight: 100vh;
+}
+
+.form {
+	background-color: #FFFFFF;
+	width: 400px;
+	border-radius: 8px;
+	padding: .5rem 1rem;
+	box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+	margin: 1rem;
+}
+
+.title {
+	font-size: .5rem;
+	margin-bottom: 1rem;
+}
+
+.inputContainer {
+	position: relative;
+	height: 1.15rem;
+	width: 90%;
+	margin-bottom: 17px;
+}
+
+.input {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 7px;
+	font-size: .8rem;
+	padding: 0 20px;
+	outline: none;
+	background: none;
+	z-index: 1;
+}
+
+::placeholder {
+	color: transparent;
+}
+
+.label {
+	position: absolute;
+	top: .5rem;
+	left: .5rem;
+	padding: 0 4px;
+	background-color: white;
+	color: black;
+	font-size: .5rem;
+	transition: 0.5s;
+	z-index: 0;
+	font-family: sans-serif;
+}
+
+.submitBtn {
+	display: block;
+	margin-left: auto;
+	padding: .5rem 1rem;
+	border: none;
+	background-color: #401F51;
+	color: #F9F6EE;
+	border-radius: .25rem;
+	cursor: pointer;
+	font-size: .5rem;
+	margin-top: 1rem;
+}
+
+.submitBtn:hover {
+	background-color: #DFCEE4;
+	transform: translateY(-2px);
+	color: #0E151D;
+}
+
+.input:focus+.label {
+	top: -7px;
+	left: 3px;
+	z-index: 10;
+	font-size: .5rem;
+	font-weight: 600;
+	color: #401F51;
+}
+
+.input:focus {
+	border: .05rem solid #401F51;
+}
+
+.input:not(:placeholder-shown)+.label {
+	top: -7px;
+	left: 3px;
+	z-index: 10;
+	font-size: .5rem;
+	font-weight: 600;
+}
+
 /*===================================
 Footer
 ===================================*/

@@ -515,10 +515,10 @@ Features
 	width: 100%;
 }
 
-.row1 p,
-.row2 p,
-.row3 p,
-.row4 p {
+.textOne,
+.textTwo,
+.textThree,
+.textFour {
 	display: none;
 }
 

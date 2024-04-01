@@ -25,8 +25,7 @@ Project is created with:
 
 * HTML5
 * CSS3
-
-Additional technologies expected with project growth. 
+* JavaScript
 
 ## Launch
 

@@ -1,3 +1,5 @@
+console.log('Can you see me?');
+
 let hideOne = document.getElementById("textOne");
 let hideTwo = document.getElementById("textTwo");
 let hideThree = document.getElementById("textThree");

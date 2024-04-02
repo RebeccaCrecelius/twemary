@@ -515,12 +515,19 @@ Features
 	width: 100%;
 }
 
-.textOne,
-.textTwo,
-.textThree,
-.textFour {
+
+.description {
 	display: none;
 }
+
+/*
+.row1 p,
+.row2 p,
+.row3 p,
+.row4 p {
+	display: none;
+}
+*/
 
 @media only screen and (max-width: 420px) {
 	#features

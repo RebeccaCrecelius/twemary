@@ -19,7 +19,7 @@ main {
 }
 
 h2,
-span,
+p.app,
 .button a,
 .button2 a {
 	font-family: sans-serif;
@@ -38,7 +38,7 @@ h2 {
 h3 {
 	font-family: sans-serif;
 	font-weight: bold;
-}	
+}
 
 p {
 	border: 1px solid #000000;
@@ -47,6 +47,19 @@ p {
 	width: 30%;
 	font-size: 0.75rem;
 	text-align: center;
+}
+
+p.app {
+	display: inline-block;
+	border-width: 0;
+	width: 80%;
+	padding-top: .5rem;
+	text-align: center;
+	margin-bottom: .2rem;
+	color: 1C1C1C;
+	font-size: .7rem;
+	font-weight: 500;
+
 }
 
 a {
@@ -122,24 +135,15 @@ a:active {
 }
 */
 
-span::after {
+p.app::after {
 	content: "\a";
 	white-space: pre;
-}
-
-span {
-	display: inline-block;
-	max-width: 80%;
-	font-size: .6rem;
-	color: 1C1C1C;
-	text-align: center;
-	margin-bottom: .5rem;
 }
 
 .striking,
 .striking2 {
 	color: #1C1C1C;
-	font-size: .7rem;
+	font-size: 1rem;
 	font-weight: bold;
 	margin-bottom: .5rem;
 	margin-top: .5rem;
@@ -224,47 +228,47 @@ span {
 	}
 }
 
-	h2 {
-		font-size: 1rem;
-	}
+h2 {
+	font-size: 1rem;
+}
 
-	.striking {
-		font-size: .75rem;
-		margin-bottom: .3rem;
-		margin-top: .3rem;
-		margin-left: .15rem;
-	}
+.striking {
+	font-size: .75rem;
+	margin-bottom: .3rem;
+	margin-top: .3rem;
+	margin-left: .15rem;
+}
 
-	span {
-		font-size: .6rem;
-	}
+span {
+	font-size: .6rem;
+}
 
-	.main-content {
-		top: 2.3rem;
-	}
+.main-content {
+	top: 2.3rem;
+}
 
-	.buttonGroup {
-		display: flex;
-		align-items: center;
-		justify-content: stretch;
-	}
+.buttonGroup {
+	display: flex;
+	align-items: center;
+	justify-content: stretch;
+}
 
 
-	.button,
-	.button2 {
-		diplay: flex;
-		flex: auto;
-		border-radius: 3px;
-		margin-top: .4rem;
-		padding-top: .75rem;
-		padding-bottom: .75rem;
-		padding-right: 6%;
-		padding-left: 6%;
-		font-size: .5rem;
-		text-align: center;
-		width: 100%;
-		height: auto;
-	}
+.button,
+.button2 {
+	diplay: flex;
+	flex: auto;
+	border-radius: 3px;
+	margin-top: .4rem;
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	padding-right: 6%;
+	padding-left: 6%;
+	font-size: .5rem;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
 }
 
 
@@ -530,10 +534,9 @@ Features
 */
 
 @media only screen and (max-width: 420px) {
-	#features
-	#features2 {
+	#features #features2 {
 		padding-top: 3rem;
-}
+	}
 }
 
 /*

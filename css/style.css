@@ -38,7 +38,7 @@ h2 {
 h3 {
 	font-family: sans-serif;
 	font-weight: bold;
-}
+}	
 
 p {
 	border: 1px solid #000000;
@@ -228,47 +228,47 @@ p.app::after {
 	}
 }
 
-h2 {
-	font-size: 1rem;
-}
+	h2 {
+		font-size: 1rem;
+	}
 
-.striking {
-	font-size: .75rem;
-	margin-bottom: .3rem;
-	margin-top: .3rem;
-	margin-left: .15rem;
-}
+	.striking {
+		font-size: .75rem;
+		margin-bottom: .3rem;
+		margin-top: .3rem;
+		margin-left: .15rem;
+	}
 
-span {
-	font-size: .6rem;
-}
+	span {
+		font-size: .6rem;
+	}
 
-.main-content {
-	top: 2.3rem;
-}
+	.main-content {
+		top: 2.3rem;
+	}
 
-.buttonGroup {
-	display: flex;
-	align-items: center;
-	justify-content: stretch;
-}
+	.buttonGroup {
+		display: flex;
+		align-items: center;
+		justify-content: stretch;
+	}
 
 
-.button,
-.button2 {
-	diplay: flex;
-	flex: auto;
-	border-radius: 3px;
-	margin-top: .4rem;
-	padding-top: .75rem;
-	padding-bottom: .75rem;
-	padding-right: 6%;
-	padding-left: 6%;
-	font-size: .5rem;
-	text-align: center;
-	width: 100%;
-	height: auto;
-}
+	.button,
+	.button2 {
+		diplay: flex;
+		flex: auto;
+		border-radius: 3px;
+		margin-top: .4rem;
+		padding-top: .75rem;
+		padding-bottom: .75rem;
+		padding-right: 6%;
+		padding-left: 6%;
+		font-size: .5rem;
+		text-align: center;
+		width: 100%;
+		height: auto;
+	}
 }
 
 
@@ -481,11 +481,12 @@ Features
 #features2 {
 	display: flex;
 	column-gap: 0.75rem;
-	height: 19rem;
+	height: 16rem;
 	width: 80%;
 	background-color: #E4E0D8;
 	flex-direction: row;
 }
+
 
 #features {
 	margin: 1.8rem auto 0 auto;
@@ -534,9 +535,10 @@ Features
 */
 
 @media only screen and (max-width: 420px) {
-	#features #features2 {
+	#features
+	#features2 {
 		padding-top: 3rem;
-	}
+}
 }
 
 /*
@@ -555,6 +557,7 @@ Features
 	margin: auto;
 	width: 100%;
 }
+
 
 /*===================================
 Newsletter

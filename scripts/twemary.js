@@ -1,5 +1,5 @@
 /*When someone hovers over the picture, the description text appears. 
-When they move away from the picture, the description text disapperas.*/
+When they move away from the picture, the description text disappears
 
 const picture = ['image-one', 'image-two', 'image-three', 'image-four'];
 
@@ -25,5 +25,9 @@ let eventAssignemnt = fuction(tell) {
 	infoHide(event);
 }
 };
-	
+*/
+
+document.querySelector("html").addEventListener("click", () => {
+alert("Hey!);
+});
 

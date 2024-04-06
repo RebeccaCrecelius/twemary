@@ -18,7 +18,6 @@ main {
 	top: 0;
 }
 
-h2,
 p.app,
 .button a,
 .button2 a {
@@ -29,10 +28,11 @@ h1 {
 	display: none;
 }
 
-h2 {
+h2.app-name {
 	font-weight: bold;
 	color: #401F51;
-	font-size: 1.3rem;
+	font-size: 2rem;
+	font-family: sans-serif;
 }
 
 h3 {
@@ -92,13 +92,19 @@ a:hover {
 }
 
 a:active {
-	color: #B7C18F;
+	color: #b7c18f;
 }
 
 .main-content {
 	position: static;
 	top: 0rem;
 }
+
+/*---------------------------------
+
+Buttons
+
+----------------------------------*/
 
 
 .buttonGroup {
@@ -116,7 +122,7 @@ a:active {
 	display: flex;
 	border-radius: 4px;
 	flex: 2 1 auto;
-	background-color: #15342C;
+	background-color: #0E151D;
 	color: #B7C18F;
 	margin: .30rem;
 	padding: .8rem .4rem .8rem .4rem;
@@ -129,16 +135,18 @@ a:active {
 	box-shadow: 4px 5px 2px gray;
 }
 
+
 .button:hover,
-.button2:hover,
-.button a:hover,
-.button2 a:hover,
-.button3: hover,
-.button3 a: hover {
-	background-color: #401F51;
-	color: white;
+.button2:hover {
+	background-color: #DFCEE4;
+	color: #0E151D;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.button:hover a,
+.button2:hover a {
+	color: #0E151D
 }
 
 /*
@@ -264,7 +272,7 @@ span {
 
 .button,
 .button2 {
-	diplay: flex;
+	display: flex;
 	flex: auto;
 	border-radius: 3px;
 	margin-top: .4rem;
@@ -390,6 +398,7 @@ CTA
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
+	/*
 	background-image: url("../images/ice-cream.jpg");
 	background-position: top;
 	background-size: cover;
@@ -397,6 +406,8 @@ CTA
 	width: auto;
 	height: auto;
 	position: relative;
+*/
+	background: linear-gradient(#401F51, #DFCEE4);
 	padding-bottom: .71rem;
 }
 
@@ -411,6 +422,10 @@ CTA
 	margin-bottom: 4rem;
 	margin-left: 3rem;
 	border-radius: 0.125rem;
+}
+
+.content {
+	padding: .5rem;
 }
 
 @media only screen and (max-width: 1060px) {
@@ -571,7 +586,7 @@ Newsletter
 ===================================*/
 
 #newsletter {
-	background-color: #F9F6EE;
+	background: linear-gradient(#DFCEE4, #401F51);
 }
 
 .signupForm {

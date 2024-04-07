@@ -55,7 +55,7 @@ p.striking,
 	border-style: none;
 	padding-top: .8rem;
 	padding-bottom: .5rem;
-}
+}	
 
 p {
 	border: 1px solid #000000;
@@ -123,7 +123,7 @@ Buttons
 	border-radius: 4px;
 	flex: 2 1 auto;
 	background-color: #0E151D;
-	color: #B7C18F;
+	color: #DFCEE4;
 	margin: .30rem;
 	padding: .8rem .4rem .8rem .4rem;
 	opacity: 1;
@@ -138,15 +138,16 @@ Buttons
 
 .button:hover,
 .button2:hover {
-	background-color: #DFCEE4;
-	color: #0E151D;
+	background-color: #454545;
+	color: #DFCEE4;
 	font-weight: bold;
 	text-decoration: none;
+	transform: translateY(-2px);
 }
 
 .button:hover a,
 .button2:hover a {
-	color: #0E151D
+	color:#DFCEE4;
 }
 
 /*
@@ -165,6 +166,7 @@ p.app::after {
 	content: "\a";
 	white-space: pre;
 }
+
 
 .center {
 	text-align: center;
@@ -244,47 +246,47 @@ p.app::after {
 	}
 }
 
-h2 {
-	font-size: 1rem;
-}
+	h2 {
+		font-size: 1rem;
+	}
 
-.striking {
-	font-size: .75rem;
-	margin-bottom: .3rem;
-	margin-top: .3rem;
-	margin-left: .15rem;
-}
+	.striking {
+		font-size: .75rem;
+		margin-bottom: .3rem;
+		margin-top: .3rem;
+		margin-left: .15rem;
+	}
 
-span {
-	font-size: .6rem;
-}
+	span {
+		font-size: .6rem;
+	}
 
-.main-content {
-	top: 2.3rem;
-}
+	.main-content {
+		top: 2.3rem;
+	}
 
-.buttonGroup {
-	display: flex;
-	align-items: center;
-	justify-content: stretch;
-}
+	.buttonGroup {
+		display: flex;
+		align-items: center;
+		justify-content: stretch;
+	}
 
 
-.button,
-.button2 {
-	display: flex;
-	flex: auto;
-	border-radius: 3px;
-	margin-top: .4rem;
-	padding-top: .75rem;
-	padding-bottom: .75rem;
-	padding-right: 6%;
-	padding-left: 6%;
-	font-size: .5rem;
-	text-align: center;
-	width: 100%;
-	height: auto;
-}
+	.button,
+	.button2 {
+		display: flex;
+		flex: auto;
+		border-radius: 3px;
+		margin-top: .4rem;
+		padding-top: .75rem;
+		padding-bottom: .75rem;
+		padding-right: 6%;
+		padding-left: 6%;
+		font-size: .5rem;
+		text-align: center;
+		width: 100%;
+		height: auto;
+	}
 }
 
 
@@ -316,24 +318,6 @@ header {
 	background-color: #454545;
 }
 
-/*
-a .logo {
-	position: center;
-	display: block;
-	overflow: hidden;
-	position: absolute !important;
-	border: 0 !important;
-	padding-left: .5rem;
-	padding-top: .6rem;
-	margin: 0 !important;
-	color: #F9F6EE;
-	font-family: "Outfit", sans-serif;
-	text-transform: uppercase;
-	font-size: 1rem;
-	font-weight: bold;
-	display: inline-block;
-}
-*/
 
 .logo {
 	float: left;
@@ -361,7 +345,7 @@ a .logo {
 .head-nav li {
 	margin-right: 3rem;
 	display: inline-block;
-	color: #F9F6EE;
+	color: #DFCEE4;
 }
 
 @media only screen and (min-width: 680px) {
@@ -398,7 +382,7 @@ CTA
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	/*
+/*
 	background-image: url("../images/ice-cream.jpg");
 	background-position: top;
 	background-size: cover;
@@ -558,9 +542,10 @@ Features
 */
 
 @media only screen and (max-width: 420px) {
-	#features #features2 {
+	#features
+	#features2 {
 		padding-top: 3rem;
-	}
+}
 }
 
 /*
@@ -589,6 +574,13 @@ Newsletter
 	background: linear-gradient(#DFCEE4, #401F51);
 }
 
+h2.newsletter-title {
+	font-weight: bold;
+	color: #401F51;
+	font-size: 1.5rem;
+	font-family: sans-serif;
+}
+
 .signupForm {
 	display: flex;
 	justify-content: right;
@@ -597,7 +589,7 @@ Newsletter
 }
 
 .form {
-	background-color: #FFFFFF;
+	background-color: #E4E0D8;
 	width: 400px;
 	border-radius: 8px;
 	padding: .5rem 1rem;
@@ -641,8 +633,8 @@ Newsletter
 	top: .5rem;
 	left: .5rem;
 	padding: 0 4px;
-	background-color: white;
-	color: black;
+	background-color: #E4E0D8;
+	color: #0E151D;
 	font-size: .5rem;
 	transition: 0.5s;
 	z-index: 0;
@@ -654,18 +646,26 @@ Newsletter
 	margin-left: auto;
 	padding: .5rem 1rem;
 	border: none;
-	background-color: #401F51;
+	background-color: #0E151D;
 	color: #F9F6EE;
 	border-radius: .25rem;
 	cursor: pointer;
 	font-size: .5rem;
 	margin-top: 1rem;
+	box-shadow: 4px 5px 2px gray;
 }
 
 .submitBtn:hover {
-	background-color: #DFCEE4;
+	background-color: #454545;
 	transform: translateY(-2px);
-	color: #0E151D;
+	color: #DFCEE4;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+.submitBtn:hover a {
+	color:#E4E0D8;
 }
 
 .input:focus+.label {

@@ -41,8 +41,7 @@ h3 {
 }
 
 
-p.striking,
-.striking2 {
+p.striking {
 	display: inline-block;
 	color: #1C1C1C;
 	font-size: 1rem;
@@ -55,7 +54,7 @@ p.striking,
 	border-style: none;
 	padding-top: .8rem;
 	padding-bottom: .5rem;
-}	
+}
 
 p {
 	border: 1px solid #000000;
@@ -147,7 +146,7 @@ Buttons
 
 .button:hover a,
 .button2:hover a {
-	color:#DFCEE4;
+	color: #DFCEE4;
 }
 
 /*
@@ -246,47 +245,47 @@ p.app::after {
 	}
 }
 
-	h2 {
-		font-size: 1rem;
-	}
+h2 {
+	font-size: 1rem;
+}
 
-	.striking {
-		font-size: .75rem;
-		margin-bottom: .3rem;
-		margin-top: .3rem;
-		margin-left: .15rem;
-	}
+.striking {
+	font-size: .75rem;
+	margin-bottom: .3rem;
+	margin-top: .3rem;
+	margin-left: .15rem;
+}
 
-	span {
-		font-size: .6rem;
-	}
+span {
+	font-size: .6rem;
+}
 
-	.main-content {
-		top: 2.3rem;
-	}
+.main-content {
+	top: 2.3rem;
+}
 
-	.buttonGroup {
-		display: flex;
-		align-items: center;
-		justify-content: stretch;
-	}
+.buttonGroup {
+	display: flex;
+	align-items: center;
+	justify-content: stretch;
+}
 
 
-	.button,
-	.button2 {
-		display: flex;
-		flex: auto;
-		border-radius: 3px;
-		margin-top: .4rem;
-		padding-top: .75rem;
-		padding-bottom: .75rem;
-		padding-right: 6%;
-		padding-left: 6%;
-		font-size: .5rem;
-		text-align: center;
-		width: 100%;
-		height: auto;
-	}
+.button,
+.button2 {
+	display: flex;
+	flex: auto;
+	border-radius: 3px;
+	margin-top: .4rem;
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	padding-right: 6%;
+	padding-left: 6%;
+	font-size: .5rem;
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
 }
 
 
@@ -382,7 +381,7 @@ CTA
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-/*
+	/*
 	background-image: url("../images/ice-cream.jpg");
 	background-position: top;
 	background-size: cover;
@@ -542,10 +541,9 @@ Features
 */
 
 @media only screen and (max-width: 420px) {
-	#features
-	#features2 {
+	#features #features2 {
 		padding-top: 3rem;
-}
+	}
 }
 
 /*
@@ -579,6 +577,7 @@ h2.newsletter-title {
 	color: #401F51;
 	font-size: 1.5rem;
 	font-family: sans-serif;
+	text-align: center;
 }
 
 .signupForm {
@@ -588,7 +587,7 @@ h2.newsletter-title {
 	hight: 100vh;
 }
 
-.form {
+.news-form {
 	background-color: #E4E0D8;
 	width: 400px;
 	border-radius: 8px;
@@ -597,16 +596,26 @@ h2.newsletter-title {
 	margin: 1rem 2rem 1rem 1rem;
 }
 
-.title {
+.newsletter-title {
 	font-size: .5rem;
-	margin-bottom: 1rem;
+}
+
+.label {
+	position: absolute;
+	top: .5rem;
+	left: .5rem;
+	padding: 0 4px;
+	background-color: #E4E0D8;
+	color: #0E151D;
+	font-size: .5rem;
+	font-family: sans-serif;
 }
 
 .inputContainer {
 	position: relative;
 	height: 1.15rem;
 	width: 90%;
-	margin-bottom: 17px;
+	margin-bottom: 20px;
 }
 
 .input {
@@ -628,18 +637,21 @@ h2.newsletter-title {
 	color: transparent;
 }
 
-.label {
-	position: absolute;
-	top: .5rem;
-	left: .5rem;
-	padding: 0 4px;
-	background-color: #E4E0D8;
-	color: #0E151D;
-	font-size: .5rem;
-	transition: 0.5s;
-	z-index: 0;
-	font-family: sans-serif;
+p.striking2 {
+	display: inline-block;
+	color: #1C1C1C;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-top: .05rem;
+	margin-bottom: 0rem;
+	margin-left: .15rem;
+	align: center;
+	width: 100%;
+	border-style: none;
+	padding-top: .8rem;
+	padding-bottom: .5rem;
 }
+
 
 .submitBtn {
 	display: block;
@@ -665,7 +677,7 @@ h2.newsletter-title {
 
 
 .submitBtn:hover a {
-	color:#E4E0D8;
+	color: #E4E0D8;
 }
 
 .input:focus+.label {
@@ -688,6 +700,8 @@ h2.newsletter-title {
 	font-size: .5rem;
 	font-weight: 600;
 }
+
+
 
 /*===================================
 Footer

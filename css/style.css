@@ -149,18 +149,6 @@ Buttons
 	color: #DFCEE4;
 }
 
-/*
-.button a {
-	float: left;
-	margin-left: 1rem;
-}
-	
-.button2 a {
-	float: right;
-	margin-right: 1rem;
-}
-*/
-
 p.app::after {
 	content: "\a";
 	white-space: pre;
@@ -381,15 +369,6 @@ CTA
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
-	/*
-	background-image: url("../images/ice-cream.jpg");
-	background-position: top;
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: auto;
-	height: auto;
-	position: relative;
-*/
 	background: linear-gradient(#401F51, #DFCEE4);
 	padding-bottom: .71rem;
 }
@@ -631,6 +610,7 @@ h2.newsletter-title {
 	outline: none;
 	background: none;
 	z-index: 1;
+
 }
 
 ::placeholder {
@@ -679,29 +659,6 @@ p.striking2 {
 .submitBtn:hover a {
 	color: #E4E0D8;
 }
-
-.input:focus+.label {
-	top: -7px;
-	left: 3px;
-	z-index: 10;
-	font-size: .5rem;
-	font-weight: 600;
-	color: #401F51;
-}
-
-.input:focus {
-	border: .05rem solid #401F51;
-}
-
-.input:not(:placeholder-shown)+.label {
-	top: -7px;
-	left: 3px;
-	z-index: 10;
-	font-size: .5rem;
-	font-weight: 600;
-}
-
-
 
 /*===================================
 Footer

@@ -43,4 +43,4 @@ Website: [rebeccacrecelius.com](https://www.rebeccacrecelius.com/)
 Email: info@rebeccacrecelius.com  
 X: [@TheBexcyLife](https://twitter.com/TheBexcyLife)  
 LinkedIn: https://www.linkedin.com/in/rebeccacrecelius/  
-Discord: http://discordapp.com/users/1192830790187364435
+Discord: [RebeccaCrecelius](http://discordapp.com/users/1192830790187364435)

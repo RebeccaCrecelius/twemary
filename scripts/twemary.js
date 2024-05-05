@@ -25,9 +25,15 @@ let eventAssignemnt = fuction(tell) {
 	infoHide(event);
 }
 };
-*/
+
 
 document.querySelector("html").addEventListener("click", () => {
 alert("Hey!);
 });
+*/
 
+$(document).ready(function () {
+    $('.hotspot').click(function () {
+        $(this).toggleClass('clicked');
+    });
+});

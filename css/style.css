@@ -230,7 +230,6 @@ p.app::after {
 		padding: 4%;
 		margin: 1rem;
 	}
-}
 
 	h2 {
 		font-size: 1rem;
@@ -363,7 +362,19 @@ header {
 /*===================================
 CTA
 ===================================*/
-
+/*
+#background-video {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+ }
+*/
 #sign-up-section {
 	display: flex;
 	justify-content: center;
@@ -383,7 +394,6 @@ CTA
 	max-width: 50%;
 	max-height: auto;
 	margin-bottom: 4rem;
-	margin-left: 3rem;
 	border-radius: 1rem;
 	border: 5px solid #454545;
 }
@@ -471,7 +481,7 @@ Hotspot
 }
 
 .hotspot {
-	width: 10rem;
+	width: 12rem;
 	height: 90px;
 	line-height: 18px;
 	text-align: center;
@@ -488,9 +498,10 @@ Hotspot
 }
 
 .empty-text {
-	font-family: sans-serif;
+	font-family: "Balsamiq Sans", Arial, sans-serif;
 	font-size: 1rem;
 	margin-top: 1rem;
+	text-align: left;
 }
 
 .hotspot .empty-text:hover {
@@ -510,8 +521,7 @@ Hotspot
 .hotspot2:hover .hover-popup2 {
 	display: block;
 	position: absolute;
-	margin-left: 1rem;
-	left: 100%;
+	left: 80%;
 	top: 0;
 	width: 10rem;
 	height: 11rem;
@@ -566,7 +576,13 @@ Features
 	margin: 0 auto;
 	object-fit: fill;
 }
-
+/*
+.feature video {
+	display: flex;
+	margin: 0 auto;
+	object-fit: fill;
+}
+*/
 .row1,
 .row2,
 .row3,
@@ -627,19 +643,20 @@ h2.newsletter-title {
 
 .signupForm {
 	display: flex;
-	justify-content: right;
+	justify-content: center;
 	align-items: center;
 	height: 100vh;
 }
 
 .news-form {
-	background-color: #E4E0D8;
-	width: 400px;
+	background-color: hsla(44, 48%, 95%, 85%);
+	width: 45%;
 	border-radius: 8px;
 	padding: .5rem 1rem;
 	box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-	margin: 1rem 2rem 1rem 1rem;
-	box-shadow: 5px 5px 5px black;
+	margin: 1rem 2rem 1rem 1rem;	
+	border-radius: 1rem;
+	border: 5px solid #454545;
 }
 
 .newsletter-title {
@@ -648,13 +665,13 @@ h2.newsletter-title {
 
 .label {
 	position: absolute;
-	top: .5rem;
-	left: .5rem;
+	bottom: 1rem;
+	margin-bottom: .25rem;
 	padding: 0 4px;
-	background-color: #E4E0D8;
 	color: #0E151D;
 	font-size: .5rem;
 	font-family: sans-serif;
+	font-weight: bold;
 }
 
 .inputContainer {
@@ -662,6 +679,7 @@ h2.newsletter-title {
 	height: 1.15rem;
 	width: 90%;
 	margin-bottom: 20px;
+	margin-top: 1rem;
 }
 
 .input {
@@ -672,16 +690,16 @@ h2.newsletter-title {
 	width: 100%;
 	border: 1px solid black;
 	border-radius: 7px;
-	font-size: .8rem;
+	font-size: .5rem;
 	padding: 0 20px;
 	outline: none;
 	background: none;
 	z-index: 1;
-
+	background-color: white;
 }
 
 ::placeholder {
-	color: transparent;
+	color: black;
 }
 
 p.striking2 {
@@ -702,7 +720,7 @@ p.striking2 {
 
 .submitBtn {
 	display: block;
-	margin-left: auto;
+	box-align: center;
 	padding: .5rem 1rem;
 	border: none;
 	background-color: #0E151D;
@@ -710,7 +728,8 @@ p.striking2 {
 	border-radius: .25rem;
 	cursor: pointer;
 	font-size: .5rem;
-	margin-top: 1rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 	box-shadow: 4px 5px 2px gray;
 }
 

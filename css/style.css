@@ -597,10 +597,6 @@ Features
 	border-radius: 8px;
 }
 
-#features #image-one #image-two video {
-	aspect-ratio: 9 / 9;
-}
-
 #features p {
 	width: 80%;
 }

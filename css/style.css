@@ -128,6 +128,7 @@ Buttons
 	float: center;
 	justify-content: center;
 	box-shadow: 4px 5px 2px gray;
+	border-radius: .25rem;
 }
 
 
@@ -685,7 +686,22 @@ Features
 .row4 {
 	width: 100%;
 }
+/*
+@media only screen and (max-width: 900px) {
+	.hotspot:hover .hover-popup,
+	.hotspot2:hover .hover-popup2 {
+	width: 12rem;
+	height: 6rem;
+}
+.hotspot {
+	width: 10rem;
+}
 
+#features,
+#features2 {
+	width: 60%;
+}
+*/
 @media only screen and (max-width: 420px) {
 	#features
 	#features2 {
@@ -724,7 +740,7 @@ h2.newsletter-title {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 80vh;
+	height: 25rem;
 }
 
 .news-form {
@@ -746,11 +762,12 @@ h2.newsletter-title {
 	position: absolute;
 	bottom: .65rem;
 	margin-bottom: 1rem;
-	padding: 0 4px;
+	padding: 0 4px 2px 4px;
 	color: #0E151D;
-	font-size: 1rem;
+	font-size: .8rem;
 	font-family: sans-serif;
 	font-weight: bold;
+	left: 2rem;
 }
 
 .inputContainer {
@@ -764,7 +781,7 @@ h2.newsletter-title {
 .input {
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: 2rem;
 	height: 100%;
 	width: 100%;
 	border: 1px solid black;
@@ -800,7 +817,7 @@ p.striking2 {
 .submitBtn {
 	display: block;
 	box-align: center;
-	padding: .5rem 1rem;
+	padding: .5rem 2rem;
 	border: none;
 	background-color: #0E151D;
 	color: #F9F6EE;
@@ -810,6 +827,7 @@ p.striking2 {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
 	box-shadow: 4px 5px 2px gray;
+	margin-left: 2rem;
 }
 
 .submitBtn:hover {

@@ -331,6 +331,7 @@ header {
 	color: #DFCEE4;
 }
 
+
 @media only screen and (min-width: 680px) {
 	.mobile ul {
 		display: none;
@@ -497,7 +498,7 @@ Hotspot
 	font-family: "Balsamiq Sans", Arial, sans-serif;
 	font-size: 1rem;
 	margin-top: 1rem;
-	text-align: left;
+	text-align: center;
 }
 
 .hotspot .empty-text:hover {
@@ -686,13 +687,35 @@ Features
 .row4 {
 	width: 100%;
 }
-/*
-@media only screen and (max-width: 900px) {
-	.hotspot:hover .hover-popup,
-	.hotspot2:hover .hover-popup2 {
-	width: 12rem;
-	height: 6rem;
+
+@media only screen and (max-width: 1200px) {
+	.hotspot {
+		width: 12em;
+	}
+	
+	.hotspot .empty-text {
+		width: 100%;
+		height: auto;
+	}
+
+	#features,
+	#features2 {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#features .feature.row2 h2 {
+		padding-top: 8rem;
+	}
+
+	#features2 .feature.row3,
+	#features2 .feature.row4 {
+		margin-top: 9rem;
+	}
+
 }
+
+/*
 .hotspot {
 	width: 10rem;
 }

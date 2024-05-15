@@ -69,7 +69,7 @@ p.app {
 	padding-top: .01rem;
 	text-align: center;
 	margin-bottom: .2rem;
-	color: 1C1C1C;
+	color: #1C1C1C;
 	font-size: .7rem;
 	font-weight: 500;
 	line-height: 1.2rem;
@@ -92,7 +92,7 @@ a:active {
 }
 
 .main-content {
-	position: static;
+	position: relative;
 	top: 0rem;
 }
 
@@ -865,18 +865,20 @@ p.striking2 {
 	color:#E4E0D8;
 }
 
+
 /*===================================
 Footer
 ===================================*/
 
 .page-footer {
+	clear: both;
 	background-color: #454545;
 	width: 100%;
 	margin: auto;
 }
 
 .page-footer-content {
-	display: inline-block;
+	display: inline;
 }
 
 .copyright {
@@ -901,4 +903,10 @@ footer li {
 
 footer ul:first-child {
 	margin-left: 35rem;
+}
+
+@media only screen and (max-width: 920px) {
+	#newsletter {
+		margin-top: 30rem;
+	}
 }

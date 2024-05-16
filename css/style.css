@@ -469,6 +469,13 @@ CTA
 	}
 }
 
+@media only screen and (max-width: 980px) {
+	#sign-up-section {
+		padding-top: 2rem;
+		background: white;
+	}
+}
+
 /*===================================
 Hotspot
 ===================================*/
@@ -534,6 +541,7 @@ Hotspot
 	font-family: san-serif;
 	font-size: .75rem;
 }
+
 
 /*====================================
 Features
@@ -688,7 +696,7 @@ Features
 	width: 100%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 980px) {
 	.hotspot {
 		width: 12em;
 	}
@@ -712,6 +720,10 @@ Features
 	#features2 .feature.row4 {
 		margin-top: 9rem;
 	}
+
+	#features .feature.row1 h2 {
+		margin-top: .1rem;
+	}
 }
 
 /*
@@ -724,12 +736,29 @@ Features
 	width: 60%;
 }
 */
-@media only screen and (max-width: 420px) {
-	#features
-	#features2 {
+@media only screen and (max-width: 980px) {
+	#features {
 		padding-top: 3rem;
 }
+
+	#features2 .row3 {
+		padding-top: 5rem;
+		padding-bottom: 0rem;
+		margin-bottom: 0rem;
+	}
+
+	#features2 .row4 {
+		padding-top: 0rem;
+	}
+
+	#features2 .feature.row4 {
+		margin-top: 6rem;
+	}
 }
+
+
+
+
 
 
 .feature img {
@@ -865,6 +894,26 @@ p.striking2 {
 	color:#E4E0D8;
 }
 
+@media only screen and (max-width: 920px) {
+	.input {
+		left: 1rem;
+	}
+
+	.label {
+		left: 1rem;
+	}
+
+	.submitBtn {
+		margin-left: 1rem;
+	}
+
+	.news-form {
+		width: 75%;
+	}
+	.newsletter-title {
+		padding-top: 1rem;
+	}
+}
 
 /*===================================
 Footer
@@ -908,5 +957,9 @@ footer ul:first-child {
 @media only screen and (max-width: 920px) {
 	#newsletter {
 		margin-top: 30rem;
+	}
+
+	footer ul:first-child {
+		margin-left: 15rem;
 	}
 }

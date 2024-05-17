@@ -358,6 +358,18 @@ header {
 	}
 }
 
+@media only screen and (max-width: 1280px) {
+	.head-nav li {
+		float: left;
+		color: #DFCEE4;
+	}
+
+	.head-nav li {
+		float: left;
+	}
+	
+}
+
 /*===================================
 CTA
 ===================================*/
@@ -770,6 +782,17 @@ Features
 	width: 100%;
 }
 
+@media only screen and (max-width: 1204px) {
+	.hotspot video {
+		width: 12em;
+		margin-left: 0rem;
+	}
+
+	#features2 {
+		margin-bottom: 3.5rem;
+	}
+}
+
 
 /*===================================
 Newsletter
@@ -915,6 +938,12 @@ p.striking2 {
 	}
 }
 
+@media only screen and (max-width: 1280px) {
+	.news-form {
+		width: 60%;
+	}
+}
+
 /*===================================
 Footer
 ===================================*/
@@ -961,5 +990,11 @@ footer ul:first-child {
 
 	footer ul:first-child {
 		margin-left: 15rem;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	footer ul:first-child {
+		margin-left: 24rem;
 	}
 }

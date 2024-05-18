@@ -91,10 +91,6 @@ a:active {
 	color: #b7c18f;
 }
 
-.main-content {
-	position: relative;
-	top: 0rem;
-}
 
 /*---------------------------------
 
@@ -192,13 +188,13 @@ p.app::after {
 	.button,
 	.button2 {
 		flex: auto;
-		space-between: .05rem;
+		place-content: .05rem;
 		border-radius: 3px;
 		font-size: .5rem;
 		text-align: center;
 		max-width: 100%;
 		height: auto;
-		padding: .5rem .3rem .5rem .3carem;
+		padding: .5rem .3rem .5rem .3rem;
 	}
 }
 
@@ -339,6 +335,10 @@ header {
 }
 
 @media only screen and (max-width: 680px) {
+	.mobile ul {
+		display: none;
+	}
+
 	.head-nav ul {
 		display: none;
 	}
@@ -367,7 +367,18 @@ header {
 	.head-nav li {
 		float: left;
 	}
-	
+}
+
+@media only screen and (max-width: 1050px) {
+	header {
+		width: 100%;
+		height: auto;
+	}
+
+	main {
+		width: 100%;
+		height: auto;
+	}
 }
 
 /*===================================
@@ -917,7 +928,16 @@ p.striking2 {
 	color:#E4E0D8;
 }
 
+@media only screen and (max-width: 980px) {
+	#newsletter {
+		clear:both;
+		margin-top: 30rem;
+	}
+}
+
+
 @media only screen and (max-width: 920px) {
+
 	.input {
 		left: 1rem;
 	}
@@ -933,16 +953,25 @@ p.striking2 {
 	.news-form {
 		width: 75%;
 	}
+
 	.newsletter-title {
 		padding-top: 1rem;
 	}
 }
-
+/*
 @media only screen and (max-width: 1280px) {
 	.news-form {
 		width: 60%;
 	}
 }
+*/
+
+@media only sreen and (max-width: 600px) {
+	main #newsletter .signupForm {
+		display: none;
+	}
+	}
+
 
 /*===================================
 Footer

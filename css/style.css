@@ -91,7 +91,6 @@ a:active {
 	color: #b7c18f;
 }
 
-
 /*---------------------------------
 
 Buttons
@@ -509,11 +508,11 @@ h2.newsletter-title {
 
 .news-form {
 	background-color: hsla(44, 48%, 95%, 85%);
-	width: 45%;
+	width: 75%;
 	border-radius: 8px;
 	padding: .5rem .5rem;
 	box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
-	margin: 1rem 1rem 1rem 1rem;
+	margin: 1rem;
 	border-radius: 1rem;
 	border: 5px solid #454545;
 }
@@ -813,6 +812,32 @@ Additional Styles
 		clear: both;
 		margin-top: 30rem;
 	}
+
+	
+.news-form {
+	width: 75%;
+}
+
+.newsletter-title {
+	font-size: .5rem;
+}
+
+.label {
+	bottom: .75rem;
+	margin-bottom: 1rem;
+}
+
+.inputContainer {
+	position: relative;
+	height: 1.25rem;
+	width: 75%;
+	margin-top: 1.5rem;
+}
+
+.input {
+	left: 2rem;
+	height: 100%;
+}
 }
 
 @media only screen and (max-width: 897px) {
@@ -867,6 +892,7 @@ Additional Styles
 		border-radius: .25rem;
 	}
 }
+
 
 @media only screen and (max-width: 787px) {
 
@@ -938,11 +964,13 @@ Additional Styles
 	}
 
 	.mobile ul {
-		display: none;
+		display: flex;
 	}
 
 	.head-nav ul {
 		display: none;
+		margin: 0rem;
+		padding: 0rem;
 	}
 
 	header .content {
@@ -950,9 +978,8 @@ Additional Styles
 	}
 
 	.mobile ul {
-		display: left;
+		display: flex;
 		align-items: left;
-		width: 100%;
 	}
 
 	.logo {
@@ -984,6 +1011,16 @@ Additional Styles
 		justify-content: center;
 		align-items: start;
 	}
+	
+	.navigation-bar .mobile li {
+		padding-left: 0;
+		display: block;
+	}
+
+	footer ul:first-child {
+		margin-left: 0rem;
+		align-items: left;
+	}
 }
 
 @media only screen and (max-width: 654px) {
@@ -993,6 +1030,7 @@ Additional Styles
 		padding: 1rem .75rem;
 		border-radius: .25rem;
 	}
+
 }
 
 @media only sreen and (max-width: 600px) {
@@ -1019,6 +1057,7 @@ Additional Styles
 		border-radius: .25rem;
 	}
 }
+
 
 @media only screen and (max-width: 420px) {
 

@@ -623,6 +623,11 @@ Footer
 	display: inline;
 }
 
+.page-footer-contact {
+	position: absolute;
+	bottom: 0;
+}
+
 .copyright {
 	border: none;
 	display: block;

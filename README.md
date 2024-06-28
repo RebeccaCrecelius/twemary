@@ -31,10 +31,10 @@ Project is created with:
 
 ## Video Credits
 
-**Pixabay**: (https://www.pexels.com/video/video-of-scooping-icecream-855128/)  
-**Gold Stock Videos by Vecteezy**: (https://www.vecteezy.com/free-videos/gold)  
-**Woman Stock Videos by Vecteezy**: (https://www.vecteezy.com/free-videos/woman)  
-**Adorable Stock Videos by Vecteezy**: (https://www.vecteezy.com/free-videos/adorable)
+**Pixabay**: https://www.pexels.com/video/video-of-scooping-icecream-855128/  
+**Gold Stock Videos by Vecteezy**: https://www.vecteezy.com/free-videos/gold  
+**Woman Stock Videos by Vecteezy**: https://www.vecteezy.com/free-videos/woman  
+**Adorable Stock Videos by Vecteezy**: https://www.vecteezy.com/free-videos/adorable
 
 ## Launch
 
